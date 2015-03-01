@@ -1,0 +1,751 @@
+{
+  "Invisible Boots": {
+    "slot": 1,
+    "category": 0
+  },
+  "Invisible Helmet": {
+    "slot": 1,
+    "category": 0
+  },
+  "Invisible Pants": {
+    "slot": 1,
+    "category": 0
+  },
+  "Invisible Vest": {
+    "slot": 1,
+    "category": 0
+  },
+  "Uber Hatchet": {
+    "slot": 1,
+    "category": 0
+  },
+  "Uber Hunting Bow": {
+    "slot": 1,
+    "category": 0
+  },
+  "Animal Fat": {
+    "slot": 250,
+    "category": 1
+  },
+  "Blood": {
+    "slot": 250,
+    "category": 1
+  },
+  "Cloth": {
+    "slot": 250,
+    "category": 1
+  },
+  "Metal Ore": {
+    "slot": 250,
+    "category": 1
+  },
+  "Stones": {
+    "slot": 250,
+    "category": 1
+  },
+  "Sulfur Ore": {
+    "slot": 250,
+    "category": 1
+  },
+  "Wood": {
+    "slot": 250,
+    "category": 1
+  },
+  "556 Ammo": {
+    "slot": 250,
+    "category": 2,
+    "craft": {
+      "Gunpowder": 5,
+      "Metal Fragments": 2
+    }
+  },
+  "9mm Ammo": {
+    "slot": 250,
+    "category": 2,
+    "craft": {
+      "Gunpowder": 3,
+      "Metal Fragments": 1
+    }
+  },
+  "Arrow": {
+    "slot": 10,
+    "category": 2,
+    "craft": {
+      "Stones": 1,
+      "Wood": 4
+    }
+  },
+  "Handmade Shell": {
+    "slot": 250,
+    "category": 2,
+    "craft": {
+      "Gunpowder": 5,
+      "Stones": 1
+    }
+  },
+  "Shotgun Shells": {
+    "slot": 250,
+    "category": 2,
+    "craft": {
+      "Gunpowder": 5,
+      "Metal Fragments": 2
+    }
+  },
+  "Cloth Boots": {
+    "slot": 1,
+    "category": 3,
+    "craft": {
+      "Cloth": 3
+    }
+  },
+  "Cloth Helmet": {
+    "slot": 1,
+    "category": 3,
+    "craft": {
+      "Cloth": 5
+    }
+  },
+  "Cloth Pants": {
+    "slot": 1,
+    "category": 3,
+    "craft": {
+      "Cloth": 8
+    }
+  },
+  "Cloth Vest": {
+    "slot": 1,
+    "category": 3,
+    "craft": {
+      "Cloth": 10
+    }
+  },
+  "Kevlar Boots": {
+    "slot": 1,
+    "category": 4,
+    "craft": {
+      "Leather": 3,
+      "Low Quality Metal": 4
+    }
+  },
+  "Kevlar Helmet": {
+    "slot": 1,
+    "category": 4,
+    "craft": {
+      "Leather": 3,
+      "Low Quality Metal": 5
+    }
+  },
+  "Kevlar Pants": {
+    "slot": 1,
+    "category": 4,
+    "craft": {
+      "Leather": 4,
+      "Low Quality Metal": 4
+    }
+  },
+  "Kevlar Vest": {
+    "slot": 1,
+    "category": 4,
+    "craft": {
+      "Leather": 4,
+      "Low Quality Metal": 6
+    }
+  },
+  "Leather Boots": {
+    "slot": 1,
+    "category": 5,
+    "craft": {
+      "Leather": 4
+    }
+  },
+  "Leather Helmet": {
+    "slot": 1,
+    "category": 5,
+    "craft": {
+      "Leather": 7
+    }
+  },
+  "Leather Pants": {
+    "slot": 1,
+    "category": 5,
+    "craft": {
+      "Leather": 12
+    }
+  },
+  "Leather Vest": {
+    "slot": 1,
+    "category": 5,
+    "craft": {
+      "Leather": 15
+    }
+  },
+  "Rad Suit Boots": {
+    "slot": 1,
+    "category": 6,
+    "craft": {
+      "Cloth": 10,
+      "Metal Fragments": 30
+    }
+  },
+  "Rad Suit Helmet": {
+    "slot": 1,
+    "category": 6,
+    "craft": {
+      "Cloth": 10,
+      "Metal Fragments": 30
+    }
+  },
+  "Rad Suit Pants": {
+    "slot": 1,
+    "category": 6,
+    "craft": {
+      "Cloth": 15,
+      "Metal Fragments": 40
+    }
+  },
+  "Rad Suit Vest": {
+    "slot": 1,
+    "category": 6,
+    "craft": {
+      "Cloth": 15,
+      "Metal Fragments": 50
+    }
+  },
+  "Explosive Charge": {
+    "slot": 5,
+    "category": 7,
+    "craft": {
+      "Explosives": 15,
+      "Flare": 1,
+      "Leather": 5
+    }
+  },
+  "Explosives": {
+    "slot": 250,
+    "category": 7,
+    "craft": {
+      "Gunpowder": 20,
+      "Low Grade Fuel": 2,
+      "Metal Fragments": 10,
+      "Sulfur": 5
+    }
+  },
+  "F1 Grenade": {
+    "slot": 5,
+    "category": 7,
+    "craft": {
+      "Gunpowder": 80,
+      "Metal Fragments": 40
+    }
+  },
+  "Wood Ceiling": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 6
+    }
+  },
+  "Wood Doorway": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 4
+    }
+  },
+  "Wood Foundation": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 8
+    }
+  },
+  "Wood Pillar": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 2
+    }
+  },
+  "Wood Ramp": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 5
+    }
+  },
+  "Wood Shelter": {
+    "slot": 5,
+    "category": 8,
+    "craft": {
+      "Wood": 50
+    }
+  },
+  "Wood Stairs": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 5
+    }
+  },
+  "Wood Wall": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": 4
+    }
+  },
+  "Wood Window": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood Planks": "4"
+    }
+  },
+  "Wooden Door": {
+    "slot": 5,
+    "category": 8,
+    "craft": {
+      "Wood": 20
+    }
+  },
+  "Cooked Chicken Breast": {
+    "slot": 250,
+    "category": 9,
+    "craft": {
+      "Wood": 1
+    }
+  },
+  "Bed": {
+    "slot": 1,
+    "category": 10,
+    "craft": {
+      "Cloth": 40,
+      "Metal Fragments": 100
+    }
+  },
+  "Sleeping Bag": {
+    "slot": 250,
+    "category": 10,
+    "craft": {
+      "Cloth": 15
+    }
+  },
+  "Metal Ceiling": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 6
+    }
+  },
+  "Metal Door": {
+    "slot": 5,
+    "category": 11,
+    "craft": {
+      "Metal Fragments": 200
+    }
+  },
+  "Metal Doorway": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 4
+    }
+  },
+  "Metal Foundation": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 8
+    }
+  },
+  "Metal Pillar": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 2
+    }
+  },
+  "Metal Ramp": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 5
+    }
+  },
+  "Metal Stairs": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 5
+    }
+  },
+  "Metal Wall": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 4
+    }
+  },
+  "Metal Window Bars": {
+    "slot": 5,
+    "category": 11,
+    "craft": {
+      "Metal Fragments": 100
+    }
+  },
+  "Metal Window": {
+    "slot": 250,
+    "category": 11,
+    "craft": {
+      "Low Quality Metal": 4
+    }
+  },
+  "Anti-Radiation Pills": {
+    "slot": 250,
+    "category": 12
+  },
+  "Bandage": {
+    "slot": 5,
+    "category": 12,
+    "craft": {
+      "Cloth": 2
+    }
+  },
+  "Large Medkit": {
+    "slot": 5,
+    "category": 12,
+    "craft": {
+      "Blood": 3,
+      "Cloth": 3
+    }
+  },
+  "Small Medkit": {
+    "slot": 5,
+    "category": 12,
+    "craft": {
+      "Blood": 2,
+      "Cloth": 2
+    }
+  },
+  "Flashlight Mod": {
+    "slot": 1,
+    "category": 13,
+    "craft": {
+      "Low Quality Metal": 5
+    }
+  },
+  "Holo sight": {
+    "slot": 1,
+    "category": 13,
+    "craft": {
+      "Low Quality Metal": 5
+    }
+  },
+  "Laser Sight": {
+    "slot": 1,
+    "category": 13,
+    "craft": {
+      "Low Quality Metal": 5
+    }
+  },
+  "Silencer": {
+    "slot": 1,
+    "category": 13,
+    "craft": {
+      "Low Quality Metal": 8
+    }
+  },
+  "9mm Pistol": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Low Quality Metal": 10
+    }
+  },
+  "Bolt Action Rifle": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Leather": 20,
+      "Low Quality Metal": 30,
+      "Wood": 50
+    }
+  },
+  "HandCannon": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Metal Fragments": 10,
+      "Wood": 20
+    }
+  },
+  "M4": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Low Quality Metal": 30
+    }
+  },
+  "MP5A4": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Low Quality Metal": 20
+    }
+  },
+  "P250": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Low Quality Metal": 12
+    }
+  },
+  "Pipe Shotgun": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Metal Fragments": 40,
+      "Wood": 50
+    }
+  },
+  "Revolver": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Cloth": 10,
+      "Metal Fragments": 80,
+      "Wood": 60
+    }
+  },
+  "Shotgun": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Low Quality Metal": 12
+    }
+  },
+  "Charcoal": {
+    "slot": 250,
+    "category": 15,
+    "result": 4,
+    "furnace": {
+      "Wood": 1
+    }
+  },
+  "Gunpowder": {
+    "slot": 250,
+    "category": 7,
+    "craft": {
+      "Charcoal": 2,
+      "Sulfur": 2
+    }
+  },
+  "Leather": {
+    "slot": 250,
+    "category": 15,
+    "result": 1,
+    "furnace": {
+      "Cloth": 1,
+      "Wood": 1
+    }
+  },
+  "Low Grade Fuel": {
+    "slot": 250,
+    "category": 7,
+    "craft": {
+      "Animal Fat": 2,
+      "Cloth": 1
+    }
+  },
+  "Low Quality Metal": {
+    "slot": 250,
+    "category": 15,
+    "craft": {
+      "Metal Fragments": 15
+    }
+  },
+  "Metal Fragments": {
+    "slot": 250,
+    "category": 15,
+    "result": 5,
+    "furnace": {
+      "Metal Ore": 1,
+      "Wood": 1
+    }
+  },
+  "Sulfur": {
+    "slot": 250,
+    "category": 15,
+    "result": 4,
+    "furnace": {
+      "Sulfur Ore": 1,
+      "Wood": 1
+    }
+  },
+  "Wood Planks": {
+    "slot": 250,
+    "category": 15,
+    "craft": {
+      "Wood": 10
+    }
+  },
+  "Camp Fire": {
+    "slot": 250,
+    "category": 16,
+    "craft": {
+      "Wood": 5
+    }
+  },
+  "Furnace": {
+    "slot": 1,
+    "category": 16,
+    "craft": {
+      "Low Grade Fuel": 10,
+      "Stones": 15,
+      "Wood": 20
+    }
+  },
+  "Repair Bench": {
+    "slot": 1,
+    "category": 16,
+    "craft": {
+      "Low Grade Fuel": 6,
+      "Metal Fragments": 50,
+      "Stones": 12,
+      "Wood": 60
+    }
+  },
+  "Workbench": {
+    "slot": 1,
+    "category": 16,
+    "craft": {
+      "Stones": 8,
+      "Wood": 50
+    }
+  },
+  "Supply Signal": {
+    "slot": 1,
+    "category": 17
+  },
+  "Flare": {
+    "slot": 10,
+    "category": 17,
+    "craft": {
+      "Gunpowder": 8,
+      "Metal Fragments": 8
+    }
+  },
+  "Handmade Lockpick": {
+    "slot": 1,
+    "category": 17,
+    "craft": {
+      "Cloth": 5,
+      "Low Quality Metal": 8
+    }
+  },
+  "Research Kit 1": {
+    "slot": 1,
+    "category": 17,
+    "craft": {
+      "Low Quality Metal": 20,
+      "Leather": 20
+    }
+  },
+  "Torch": {
+    "slot": 1,
+    "category": 17,
+    "craft": {
+      "Low Grade Fuel": 1,
+      "Cloth": 1,
+      "Wood": 1
+    }
+  },
+  "Large Spike Wall": {
+    "slot": 1,
+    "category": 8,
+    "craft": {
+      "Wood": 200
+    }
+  },
+  "Spike Wall": {
+    "slot": 1,
+    "category": 8,
+    "craft": {
+      "Wood": 100
+    }
+  },
+  "Wood Barricade": {
+    "slot": 250,
+    "category": 8,
+    "craft": {
+      "Wood": 30
+    }
+  },
+  "Wood Gate": {
+    "slot": 1,
+    "category": 8,
+    "craft": {
+      "Wood": 120
+    }
+  },
+  "Wood Gateway": {
+    "slot": 1,
+    "category": 8,
+    "craft": {
+      "Wood": 400
+    }
+  },
+  "Hatchet": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Metal Fragments": 10,
+      "Wood": 20
+    }
+  },
+  "Hunting Bow": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Cloth": 5,
+      "Wood": 35
+    }
+  },
+  "Pick Axe": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Metal Fragments": 15,
+      "Wood": 40
+    }
+  },
+  "Stone Hatchet": {
+    "slot": 1,
+    "category": 14,
+    "craft": {
+      "Stones": 5,
+      "Wood": 10
+    }
+  },
+  "Large Wood Storage": {
+    "slot": 5,
+    "category": 8,
+    "craft": {
+      "Wood": 60
+    }
+  },
+  "Small Stash": {
+    "slot": 5,
+    "category": 17,
+    "craft": {
+      "Leather": 10
+    }
+  },
+  "Wood Storage Box": {
+    "slot": 5,
+    "category": 8,
+    "craft": {
+      "Wood": 30
+    }
+  }
+}

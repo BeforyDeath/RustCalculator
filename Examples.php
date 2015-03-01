@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="css/items_icon.css" rel="stylesheet">
+    <link href="css/RustCalculator.css" rel="stylesheet">
+</head>
+<body>
+
+<div style="width: 880px; margin: 0 auto">
+    <div style="width: 435px;float: left;margin-right: 10px;">
+        <div id="rc_entities"></div>
+    </div>
+    <div style="width: 435px;float: left">
+        <div id="rc_inventory"></div>
+    </div>
+    <div style="width: 435px;float: right">
+        <div id="rc_inventory_button">
+            <button class="rc_inventory_clear">clear</button>
+            <? //*/?>
+            <button class="rc_inventory_give">give</button>
+            <div class="rc_select">
+                <select class="form-control input-sm">
+                    <option value="byd">byd</option>
+                </select>
+            </div>
+            <? //*/?>
+        </div>
+        <div id="rc_craft"></div>
+    </div>
+</div>
+</body>
+<script src="js/RustCalculator.js"></script>
+</html>
+
+
+

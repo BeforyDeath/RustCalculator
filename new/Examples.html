@@ -5,14 +5,13 @@
 </head>
 <body>
 
-<div id="rc_entity"></div>
+<div id="rc_category"></div>
+<div id="rc_category_1"></div>
 <script src="RustCategory.js"></script>
-<script src="RustEntity.js"></script>
 <script>
     var category = new RustCategory();
-    console.dir(category.list);
-    var entity = new RustEntity();
-    console.dir(entity.list);
+    category.drawSelect('#rc_category');
+    category.drawSelect('#rc_category_1', 'Food');
 </script>
 
 </body>

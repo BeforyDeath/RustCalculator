@@ -1,8 +1,8 @@
 /// <reference path="RustCalculator.ts"/>
 var RustEntity = (function () {
     function RustEntity() {
-        this.list = [];
-        var entity = this.list;
+        this.items = [];
+        var entity = this.items;
         $.ajax({
             url: 'entity.json',
             dataType: 'json',
@@ -16,7 +16,7 @@ var RustEntity = (function () {
                 });
             }
         });
-        this.list = entity;
+        this.items = entity;
     }
     return RustEntity;
 })();

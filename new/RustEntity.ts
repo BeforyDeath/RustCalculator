@@ -1,10 +1,10 @@
 /// <reference path="RustCalculator.ts"/>
 
 class RustEntity {
-    list:string[] = [];
+    items:string[] = [];
 
     constructor() {
-        var entity = this.list;
+        var entity = this.items;
         $.ajax({
             url: 'entity.json',
             dataType: 'json',
@@ -18,6 +18,6 @@ class RustEntity {
                 });
             }
         });
-        this.list = entity;
+        this.items = entity;
     }
 }

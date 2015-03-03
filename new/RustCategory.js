@@ -29,6 +29,20 @@ var RustCategory = (function () {
         $(select).on('change', this.onChange);
         $(element).append(select);
     };
+    RustCategory.prototype.js_drawSelect = function (element, selected) {
+        if (selected === void 0) { selected = 'All'; }
+        element = document.getElementById(element);
+        var select = document.createElement('select');
+        select.className = 'rs_select';
+        for (var key in this.items) {
+            var option = document.createElement('option');
+            option.selected = (this.items[key] == selected) ? true : false;
+            option.value = key;
+            option.innerHTML = this.items[key];
+            select.appendChild(option);
+        }
+        element.appendChild(select);
+    };
     RustCategory.prototype.onChange = function () {
         console.log(1);
     };

@@ -32,7 +32,23 @@ class RustCategory {
         $(select).on('change', this.onChange);
         $(element).append(select);
     }
-    private onChange(){
+
+    public js_drawSelect(element, selected = 'All') {
+        element = document.getElementById(element);
+        var select = document.createElement('select');
+        select.className = 'rs_select';
+        for (var key in this.items) {
+            var option = document.createElement('option');
+            option.selected = (this.items[key] == selected) ? true : false;
+            option.value = key;
+            option.innerHTML = this.items[key];
+            select.appendChild(option);
+        }
+        element.appendChild(select);
+    }
+
+
+    private onChange() {
         console.log(1);
     }
 }

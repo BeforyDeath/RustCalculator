@@ -7,11 +7,11 @@
 
 <div id="rc_category"></div>
 <div id="rc_category_1"></div>
-<script src="RustCategory.js"></script>
+<script src="Category.js"></script>
 <script>
-    var category = new RustCategory();
-    category.js_drawSelect('rc_category','Food');
-    category.drawSelect('#rc_category_1', 'Food');
+    var category = new Category();
+    category.load('../ts/data.json');
+    category.draw('#rc_category');
 </script>
 
 </body>

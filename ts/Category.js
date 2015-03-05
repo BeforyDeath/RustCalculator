@@ -2,10 +2,24 @@
  * Created by beforydeath on 05.03.15.
  */
 /// <reference path="Rust.ts"/>
-var Category = (function () {
+/// <reference path="EventMixin.ts"/>
+var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var Category = (function (_super) {
+    __extends(Category, _super);
     function Category() {
+        _super.apply(this, arguments);
         this.data = {};
-        this.listeners = [];
+        this.onChange = function (e) {
+            //console.log(e.currentTarget.selectedIndex);
+            //console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
+            //console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
+            //console.dir(e.currentTarget);
+        };
     }
     Category.prototype.load = function (url) {
         var self = this;
@@ -45,12 +59,6 @@ var Category = (function () {
     Category.prototype.select = function (selected) {
         if (selected === void 0) { selected = 'All'; }
     };
-    Category.prototype.onChange = function (e) {
-        console.log(e.currentTarget.selectedIndex);
-        console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
-        console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
-        //console.dir(e.currentTarget);
-    };
     return Category;
-})();
+})(EventMixin);
 //# sourceMappingURL=Category.js.map

@@ -2,12 +2,12 @@
  * Created by beforydeath on 05.03.15.
  */
 /// <reference path="Rust.ts"/>
+/// <reference path="EventMixin.ts"/>
 
-class Category {
+class Category extends EventMixin {
     private data = {};
-    private listeners:string[] = [];
 
-    load(url?:string){
+    load(url?:string) {
         var self = this;
         $.ajax({
             url: url,
@@ -20,7 +20,7 @@ class Category {
         return this;
     }
 
-    loadData(data){
+    loadData(data) {
         var _data = {};
         $.each(data.category, function (key, value) {
             _data[key.replace(/ /g, '_')] = {
@@ -32,7 +32,7 @@ class Category {
         return this;
     }
 
-    draw(element:string){
+    draw(element:string) {
         var select = $('<select/>', {class: 'rs_select'});
         $.each(this.data, function (key, value) {
             $('<option/>', {
@@ -45,13 +45,13 @@ class Category {
         $(element).append(select);
     }
 
-    select(selected:string = 'All'){
+    select(selected:string = 'All') {
     }
 
-    private onChange(e){
-        console.log(e.currentTarget.selectedIndex);
-        console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
-        console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
+    private onChange = (e) => {
+        //console.log(e.currentTarget.selectedIndex);
+        //console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
+        //console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
         //console.dir(e.currentTarget);
     }
 }

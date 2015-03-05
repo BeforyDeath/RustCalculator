@@ -1,0 +1,60 @@
+{
+    "category": {
+        "All": 0,
+        "Admin Tools": 1,
+        "Basic resources": 2,
+        "Ammunition": 3,
+        "Armor Cloth": 4,
+        "Armor Kevlar": 5,
+        "Armor Leather": 6,
+        "Armor Rad Suit": 7,
+        "Explosives": 8,
+        "Timber construction": 9,
+        "Food": 10,
+        "Beds": 11,
+        "Metal Structures": 12,
+        "Medicines": 13,
+        "Fashion for weapons": 14,
+        "Weapons": 15,
+        "Recycled Resources": 16,
+        "Production": 17,
+        "Miscellaneous": 18
+    },
+    "entity": {
+        "Low Quality Metal": {
+            "slot": 250,
+            "category": 15,
+            "craft": {
+                "Metal Fragments": 15
+            },
+            "price": {
+                "value": 1,
+                "count": 25
+            }
+        },
+        "Metal Fragments": {
+            "slot": 250,
+            "category": 15,
+            "furnace": {
+                "items": {
+                    "Metal Ore": 1,
+                    "Wood": 1
+                },
+                "result": 5
+            }
+        }
+    },
+    "inventory": {
+        "countSlot": 30,
+        "slot": {
+            "0": {
+                "entity": "Metal Fragments",
+                "count": 150
+            },
+            "6": {
+                "entity": "Metal Fragments",
+                "count": 56
+            }
+        }
+    }
+}

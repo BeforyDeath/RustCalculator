@@ -2,7 +2,6 @@
  * Created by beforydeath on 05.03.15.
  */
 /// <reference path="Rust.ts"/>
-/// <reference path="EventMixin.ts"/>
 
 class Category extends EventMixin {
     private data = {};
@@ -30,6 +29,14 @@ class Category extends EventMixin {
         });
         this.data = _data;
         return this;
+    }
+
+    getData() {
+        return this.data;
+    }
+
+    setData(data) {
+        this.data = data;
     }
 
     draw(element:string) {

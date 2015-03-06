@@ -21,3 +21,7 @@
  +draw()
  -drawUpdate(id)
  */
+
+class Inventory extends EventMixin {
+
+}

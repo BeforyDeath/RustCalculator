@@ -5,11 +5,6 @@
 var EventMixin = (function () {
     function EventMixin() {
         var _this = this;
-        /**
-         * Подписка на событие
-         * Использование:
-         *  menu.on('select', function(item) { ... }
-         */
         this.on = function (eventName, handler) {
             if (!_this._eventHandlers)
                 _this._eventHandlers = [];
@@ -18,10 +13,6 @@ var EventMixin = (function () {
             }
             _this._eventHandlers[eventName].push(handler);
         };
-        /**
-         * Прекращение подписки
-         *  menu.off('select',  handler)
-         */
         this.off = function (eventName, handler) {
             var handlers = _this._eventHandlers[eventName];
             if (!handlers)
@@ -32,13 +23,14 @@ var EventMixin = (function () {
                 }
             }
         };
-        /**
-         * Генерация события с передачей данных
-         *  this.trigger('select', item);
-         */
         this.trigger = function (eventName) {
+            if (typeof _this._eventHandlers == 'undefined') {
+                //console.info('object no eventHandlers');
+                return;
+            }
             if (!_this._eventHandlers[eventName]) {
-                return; // обработчиков для события нет
+                //console.error('eventHandlers no "' + eventName + '" event');
+                return;
             }
             // вызвать обработчики
             var handlers = _this._eventHandlers[eventName];

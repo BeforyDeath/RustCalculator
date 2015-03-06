@@ -4,12 +4,6 @@
 /// <reference path="Rust.ts"/>
 
 class EventMixin {
-
-    /**
-     * Подписка на событие
-     * Использование:
-     *  menu.on('select', function(item) { ... }
-     */
     on = (eventName, handler) => {
         if (!this._eventHandlers) this._eventHandlers = [];
         if (!this._eventHandlers[eventName]) {
@@ -17,11 +11,6 @@ class EventMixin {
         }
         this._eventHandlers[eventName].push(handler);
     };
-
-    /**
-     * Прекращение подписки
-     *  menu.off('select',  handler)
-     */
     off = (eventName, handler) => {
         var handlers = this._eventHandlers[eventName];
         if (!handlers) return;
@@ -31,14 +20,14 @@ class EventMixin {
             }
         }
     };
-
-    /**
-     * Генерация события с передачей данных
-     *  this.trigger('select', item);
-     */
     trigger = (eventName) => {
+        if (typeof this._eventHandlers == 'undefined') {
+            //console.info('object no eventHandlers');
+            return;
+        }
         if (!this._eventHandlers[eventName]) {
-            return; // обработчиков для события нет
+            //console.error('eventHandlers no "' + eventName + '" event');
+            return;
         }
         // вызвать обработчики
         var handlers = this._eventHandlers[eventName];

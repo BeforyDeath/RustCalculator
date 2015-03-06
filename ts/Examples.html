@@ -6,18 +6,24 @@
 <body>
 
 <div id="rc_category"></div>
-<div id="rc_category_1"></div>
+<div id="rc_category2"></div>
 <script src="EventMixin.js"></script>
 <script src="Category.js"></script>
 <script src="Entity.js"></script>
 <script>
     var category = new Category();
+    var category2 = new Category();
     var entity = new Entity();
+    var entity2 = new Entity();
 
-    category.on('change', entity.evtTest);
+    category.on('mychange', entity.evtTest);
+    category2.on('mychange', entity2.evtTest);
 
     category.load('../ts/data.json');
+    category2.setData(category.getData());
+
     category.draw('#rc_category');
+    category2.draw('#rc_category2');
 
 
     //    console.log(category);

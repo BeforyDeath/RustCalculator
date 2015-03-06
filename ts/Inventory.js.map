@@ -1,1 +1,1 @@
-{"version":3,"file":"Inventory.js","sourceRoot":"","sources":["Inventory.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,+BAA+B;AAC/B;;;;;;;;;;;;;;;;;;;AAkBG"}
+{"version":3,"file":"Inventory.js","sourceRoot":"","sources":["Inventory.ts"],"names":["Inventory","Inventory.constructor"],"mappings":"AAAA;;GAEG;AACH,+BAA+B;AAC/B;;;;;;;;;;;;;;;;;;GAkBG;;;;;;;AAEH,IAAM,SAAS;IAASA,UAAlBA,SAASA,UAAmBA;IAAlCA,SAAMA,SAASA;QAASC,8BAAUA;IAElCA,CAACA;IAADD,gBAACA;AAADA,CAACA,AAFD,EAAwB,UAAU,EAEjC"}

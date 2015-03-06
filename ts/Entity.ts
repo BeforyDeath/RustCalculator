@@ -2,7 +2,6 @@
  * Created by beforydeath on 05.03.15.
  */
 /// <reference path="Rust.ts"/>
-/// <reference path="EventMixin.ts"/>
 
 /*
  Entity
@@ -17,7 +16,7 @@
  */
 class Entity extends EventMixin {
 
-    evtTest(e){
+    evtTest(e) {
         console.log(e);
     }
 }

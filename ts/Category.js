@@ -2,7 +2,6 @@
  * Created by beforydeath on 05.03.15.
  */
 /// <reference path="Rust.ts"/>
-/// <reference path="EventMixin.ts"/>
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -42,6 +41,12 @@ var Category = (function (_super) {
         });
         this.data = _data;
         return this;
+    };
+    Category.prototype.getData = function () {
+        return this.data;
+    };
+    Category.prototype.setData = function (data) {
+        this.data = data;
     };
     Category.prototype.draw = function (element) {
         var select = $('<select/>', { class: 'rs_select' });

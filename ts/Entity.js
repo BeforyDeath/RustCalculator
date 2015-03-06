@@ -22,11 +22,14 @@ var __extends = this.__extends || function (d, b) {
 var Entity = (function (_super) {
     __extends(Entity, _super);
     function Entity() {
+        var _this = this;
         _super.apply(this, arguments);
+        this.nameEntity = '';
+        this.evtTest = function (e) {
+            console.info(_this.nameEntity);
+            console.log(e);
+        };
     }
-    Entity.prototype.evtTest = function (e) {
-        console.log(e);
-    };
     return Entity;
 })(EventMixin);
 //# sourceMappingURL=Entity.js.map

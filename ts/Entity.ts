@@ -15,8 +15,10 @@
  -drawUpdate(id)
  */
 class Entity extends EventMixin {
+    nameEntity = '';
 
-    evtTest(e) {
+    evtTest = (e) => {
+        console.info(this.nameEntity);
         console.log(e);
     }
 }

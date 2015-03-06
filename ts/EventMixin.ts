@@ -26,7 +26,7 @@ class EventMixin {
             return;
         }
         if (!this._eventHandlers[eventName]) {
-            //console.error('eventHandlers no "' + eventName + '" event');
+            //console.info('eventHandlers no "' + eventName + '" event');
             return;
         }
         // вызвать обработчики

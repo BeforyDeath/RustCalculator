@@ -31,9 +31,9 @@ var Category = (function (_super) {
         });
         return this;
     };
-    Category.prototype.loadData = function (data) {
+    Category.prototype.loadData = function (json) {
         var _data = {};
-        $.each(data.category, function (key, value) {
+        $.each(json.category, function (key, value) {
             _data[key.replace(/ /g, '_')] = {
                 id: value,
                 name: key
@@ -49,6 +49,7 @@ var Category = (function (_super) {
         this.data = data;
     };
     Category.prototype.draw = function (element) {
+        this.element_id = element;
         var select = $('<select/>', { class: 'rs_select' });
         $.each(this.data, function (key, value) {
             $('<option/>', {
@@ -62,6 +63,12 @@ var Category = (function (_super) {
     };
     Category.prototype.select = function (selected) {
         if (selected === void 0) { selected = 'All'; }
+        var select = $(this.element_id + ' select');
+        if (select.find("option:contains('" + selected + "')").attr('selected', 'selected').length > 0) {
+            select.trigger('change');
+        }
+        else {
+        }
     };
     return Category;
 })(EventMixin);

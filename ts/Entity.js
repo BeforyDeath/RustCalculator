@@ -25,6 +25,9 @@ var Entity = (function (_super) {
     function Entity() {
         _super.apply(this, arguments);
     }
+    Entity.prototype.evtTest = function (e) {
+        console.log(e);
+    };
     return Entity;
 })(EventMixin);
 //# sourceMappingURL=Entity.js.map

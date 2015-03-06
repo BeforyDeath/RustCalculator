@@ -17,4 +17,7 @@
  */
 class Entity extends EventMixin {
 
+    evtTest(e){
+        console.log(e);
+    }
 }

@@ -12,15 +12,13 @@
 <script src="Entity.js"></script>
 <script>
     var category = new Category();
+    var entity = new Entity();
+
+    category.on('change', entity.evtTest);
+
     category.load('../ts/data.json');
     category.draw('#rc_category');
 
-    var entity = new Entity();
-    category.on('test', function (e) {
-        alert(e);
-    });
-
-    category.trigger('test', 'pumpum');
 
     //    console.log(category);
     //    console.log(entity);

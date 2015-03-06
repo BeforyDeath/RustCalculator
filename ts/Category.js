@@ -12,13 +12,12 @@ var __extends = this.__extends || function (d, b) {
 var Category = (function (_super) {
     __extends(Category, _super);
     function Category() {
+        var _this = this;
         _super.apply(this, arguments);
         this.data = {};
         this.onChange = function (e) {
-            //console.log(e.currentTarget.selectedIndex);
-            //console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
-            //console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
-            //console.dir(e.currentTarget);
+            var id = e.currentTarget[e.currentTarget.selectedIndex].id, index = e.currentTarget.selectedIndex, label = e.currentTarget[e.currentTarget.selectedIndex].label;
+            _this.trigger('change', { id: id, index: index, label: label });
         };
     }
     Category.prototype.load = function (url) {

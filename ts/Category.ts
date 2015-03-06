@@ -49,9 +49,10 @@ class Category extends EventMixin {
     }
 
     private onChange = (e) => {
-        //console.log(e.currentTarget.selectedIndex);
-        //console.log(e.currentTarget[e.currentTarget.selectedIndex].id);
-        //console.log(e.currentTarget[e.currentTarget.selectedIndex].label);
-        //console.dir(e.currentTarget);
+        var id = e.currentTarget[e.currentTarget.selectedIndex].id,
+            index = e.currentTarget.selectedIndex,
+            label = e.currentTarget[e.currentTarget.selectedIndex].label;
+        this.trigger('change', {id: id, index: index, label: label});
+
     }
 }

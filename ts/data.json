@@ -23,7 +23,7 @@
     "entity": {
         "Low Quality Metal": {
             "slot": 250,
-            "category": 15,
+            "category_id": 15,
             "craft": {
                 "Metal Fragments": 15
             },
@@ -34,7 +34,7 @@
         },
         "Metal Fragments": {
             "slot": 250,
-            "category": 15,
+            "category_id": 15,
             "furnace": {
                 "items": {
                     "Metal Ore": 1,

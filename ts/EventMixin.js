@@ -1,10 +1,10 @@
 /**
  * Created by beforydeath on 06.03.15.
  */
-/// <reference path="Rust.ts"/>
 var EventMixin = (function () {
     function EventMixin() {
         var _this = this;
+        this._eventHandlers = [];
         this.on = function (eventName, handler) {
             if (!_this._eventHandlers)
                 _this._eventHandlers = [];
@@ -24,10 +24,6 @@ var EventMixin = (function () {
             }
         };
         this.trigger = function (eventName) {
-            if (typeof _this._eventHandlers == 'undefined') {
-                //console.info('object no eventHandlers');
-                return;
-            }
             if (!_this._eventHandlers[eventName]) {
                 //console.info('eventHandlers no "' + eventName + '" event');
                 return;

@@ -48,8 +48,8 @@ var Category = (function (_super) {
     Category.prototype.setData = function (data) {
         this.data = data;
     };
-    Category.prototype.draw = function (element) {
-        this.element_id = element;
+    Category.prototype.draw = function (selector) {
+        this.selector = selector;
         var select = $('<select/>', { class: 'rs_select' });
         $.each(this.data, function (key, value) {
             $('<option/>', {
@@ -59,11 +59,11 @@ var Category = (function (_super) {
             }).appendTo(select);
         });
         $(select).on('change', this.onChange);
-        $(element).append(select);
+        $(selector).append(select);
     };
     Category.prototype.select = function (selected) {
         if (selected === void 0) { selected = 'All'; }
-        var select = $(this.element_id + ' select');
+        var select = $(this.selector + ' select');
         if (select.find("option:contains('" + selected + "')").attr('selected', 'selected').length > 0) {
             select.trigger('change');
         }

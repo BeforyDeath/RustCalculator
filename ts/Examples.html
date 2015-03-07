@@ -6,32 +6,27 @@
 <body>
 
 <div id="rc_category"></div>
-<div id="rc_category2"></div>
+<div id="rc_entity"></div>
 <script src="EventMixin.js"></script>
 <script src="Category.js"></script>
 <script src="Entity.js"></script>
 <script>
     var category = new Category();
-    var category2 = new Category();
     var entity = new Entity();
-    entity.nameEntity = 'entity_1';
-    var entity2 = new Entity();
-    entity2.nameEntity = 'entity_2';
-
-    category.on('change', entity.evtTest);
-    category2.on('change', entity2.evtTest);
-
+    category.on('change', entity.categoryChange);
     category.load('../ts/data.json');
-    category2.setData(category.getData());
+    entity.load('../ts/data.json');
 
     category.draw('#rc_category');
-    category2.draw('#rc_category2');
+    entity.draw('#rc_entity');
 
     category.select('Food');
-    category2.select('Production');
+
 
     //    console.log(category);
     //    console.log(entity);
+
+
 </script>
 
 </body>

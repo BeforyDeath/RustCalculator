@@ -1,9 +1,9 @@
 /**
  * Created by beforydeath on 06.03.15.
  */
-/// <reference path="Rust.ts"/>
 
 class EventMixin {
+    private _eventHandlers = [];
     on = (eventName, handler) => {
         if (!this._eventHandlers) this._eventHandlers = [];
         if (!this._eventHandlers[eventName]) {
@@ -21,10 +21,6 @@ class EventMixin {
         }
     };
     trigger = (eventName) => {
-        if (typeof this._eventHandlers == 'undefined') {
-            //console.info('object no eventHandlers');
-            return;
-        }
         if (!this._eventHandlers[eventName]) {
             //console.info('eventHandlers no "' + eventName + '" event');
             return;

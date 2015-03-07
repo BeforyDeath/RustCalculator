@@ -5,7 +5,7 @@
 
 class Category extends EventMixin {
     private data = {};
-    private element_id:string;
+    private selector:string;
 
     load(url:string) {
         var self = this;
@@ -40,8 +40,8 @@ class Category extends EventMixin {
         this.data = data;
     }
 
-    draw(element:string) {
-        this.element_id = element;
+    draw(selector:string) {
+        this.selector = selector;
         var select = $('<select/>', {class: 'rs_select'});
         $.each(this.data, function (key, value) {
             $('<option/>', {
@@ -51,11 +51,11 @@ class Category extends EventMixin {
             }).appendTo(select);
         });
         $(select).on('change', this.onChange);
-        $(element).append(select);
+        $(selector).append(select);
     }
 
     select(selected:string = 'All') {
-        var select = $(this.element_id + ' select');
+        var select = $(this.selector + ' select');
         if (select.find("option:contains('" + selected + "')").attr('selected', 'selected').length > 0) {
             select.trigger('change');
         } else {

@@ -808,7 +808,7 @@
         }
     },
     "inventory": {
-        "countSlot": 30,
+        "countSlot": 6,
         "slot": {
             "0": {
                 "entity": "Metal Fragments",

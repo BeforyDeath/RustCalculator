@@ -6,23 +6,32 @@
 </head>
 <body>
 
-<div id="rc_category"></div>
-<div id="rc_entity"></div>
+<div id="d_category"></div>
+<div id="d_entity"></div>
+<div id="d_inventory"></div>
 
 <script src="EventMixin.js"></script>
 <script src="Category.js"></script>
 <script src="Entity.js"></script>
+<script src="Inventory.js"></script>
 
 <script>
     var category = new Category();
-    var entity = new Entity();
-    category.on('change', entity.categoryChange);
     category.load('../ts/data.json');
+    category.draw('#d_category');
+
+    var entity = new Entity();
     entity.load('../ts/data.json');
-    category.draw('#rc_category');
     entity.size = 75;
-    entity.draw('#rc_entity');
+    entity.draw('#d_entity');
+    category.on('change', entity.categoryChange);
     category.select('Explosives');
+
+    var inventory = new Inventory();
+    inventory.load('../ts/data.json');
+    inventory.draw('#d_inventory');
+//    console.log(inventory.getData());
+
 </script>
 
 </body>

@@ -8,36 +8,23 @@
 
 <div id="rc_category"></div>
 <div id="rc_entity"></div>
-<div id="rc_category1"></div>
-<div id="rc_entity1"></div>
+
 <script src="EventMixin.js"></script>
 <script src="Category.js"></script>
 <script src="Entity.js"></script>
+
 <script>
     var category = new Category();
-    var category1 = new Category();
     var entity = new Entity();
-    var entity1 = new Entity();
-
     category.on('change', entity.categoryChange);
-    category1.on('change', entity1.categoryChange);
-
     category.load('../ts/data.json');
-    category1.setData(category.getData());
-
     entity.load('../ts/data.json');
-    entity1.setData(entity.getData());
-
     category.draw('#rc_category');
-    category1.draw('#rc_category1');
-
+    entity.size = 75;
     entity.draw('#rc_entity');
-    entity1.draw('#rc_entity1');
-
     category.select('Explosives');
-    category1.select('Weapons');
-
 </script>
+
 </body>
 </html>
 

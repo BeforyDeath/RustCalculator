@@ -17,7 +17,6 @@ class Category extends EventMixin {
                 self.loadData(data);
             }
         });
-        return this;
     }
 
     private loadData(json) {
@@ -29,7 +28,6 @@ class Category extends EventMixin {
             };
         });
         this.data = _data;
-        return this;
     }
 
     getData() {
@@ -58,15 +56,13 @@ class Category extends EventMixin {
         var select = $(this.selector + ' select');
         if (select.find("option:contains('" + selected + "')").attr('selected', 'selected').length > 0) {
             select.trigger('change');
-        } else {
-            //console.info('no options selected "' + selected + '"');
         }
     }
 
     private onChange = (e) => {
         var id = e.currentTarget[e.currentTarget.selectedIndex].id,
-            index = e.currentTarget.selectedIndex,
-            label = e.currentTarget[e.currentTarget.selectedIndex].label;
-        this.trigger('change', {id: id, index: index, label: label});
+            category_id = e.currentTarget.selectedIndex,
+            name = e.currentTarget[e.currentTarget.selectedIndex].label;
+        this.trigger('change', {id: id, category_id: category_id, name: name});
     }
 }

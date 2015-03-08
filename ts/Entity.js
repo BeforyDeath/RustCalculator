@@ -16,10 +16,16 @@ var Entity = (function (_super) {
         this.data = {};
         this.size = 65;
         this.categoryChange = function (e) {
-            $(_this.selector + ' button').hide();
-            $(_this.selector).find('button[value=' + e.index + ']').show();
-            //console.info(this.selector);
-            //console.log(e);
+            if (e.category_id > 0) {
+                $(_this.selector + ' button').hide();
+                $(_this.selector).find('button[value=' + e.category_id + ']').show();
+            }
+            else
+                $(_this.selector + ' button').show();
+        };
+        this.onClick = function (e) {
+            var id = e.currentTarget.id, category_id = e.currentTarget.value, name = e.currentTarget.title;
+            _this.trigger('click', { id: id, category_id: category_id, name: name });
         };
     }
     Entity.prototype.load = function (url) {
@@ -32,7 +38,6 @@ var Entity = (function (_super) {
                 self.loadData(data);
             }
         });
-        return this;
     };
     Entity.prototype.loadData = function (json) {
         var _data = {};
@@ -44,7 +49,6 @@ var Entity = (function (_super) {
             };
         });
         this.data = _data;
-        return this;
     };
     Entity.prototype.getData = function () {
         return this.data;
@@ -62,6 +66,7 @@ var Entity = (function (_super) {
                 title: value.name,
                 val: value.category_id
             });
+            $(entity).on('click', self.onClick);
             $(selector).append(entity);
         });
     };

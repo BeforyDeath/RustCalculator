@@ -6,7 +6,7 @@
 class Entity extends EventMixin {
     private data = {};
     private selector:string;
-    private size:number = 65;
+    public size:number = 65;
 
     load(url:string) {
         var self = this;
@@ -18,7 +18,6 @@ class Entity extends EventMixin {
                 self.loadData(data);
             }
         });
-        return this;
     }
 
     private loadData(json) {
@@ -31,7 +30,6 @@ class Entity extends EventMixin {
             };
         });
         this.data = _data;
-        return this;
     }
 
     getData() {
@@ -45,7 +43,6 @@ class Entity extends EventMixin {
     draw(selector:string) {
         var self = this;
         self.selector = selector;
-
         $.each(this.data, function (key, value) {
             var entity = $('<button/>', {
                 id: key,
@@ -53,14 +50,22 @@ class Entity extends EventMixin {
                 title: value.name,
                 val: value.category_id
             });
+            $(entity).on('click', self.onClick);
             $(selector).append(entity);
         });
     }
 
     categoryChange = (e) => {
-        $(this.selector + ' button').hide();
-        $(this.selector).find('button[value=' + e.index + ']').show();
-        //console.info(this.selector);
-        //console.log(e);
+        if (e.category_id > 0) {
+            $(this.selector + ' button').hide();
+            $(this.selector).find('button[value=' + e.category_id + ']').show();
+        } else $(this.selector + ' button').show();
+    };
+
+    private onClick = (e) => {
+        var id = e.currentTarget.id,
+            category_id = e.currentTarget.value,
+            name = e.currentTarget.title;
+        this.trigger('click', {id: id, category_id: category_id, name: name});
     }
 }

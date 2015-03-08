@@ -15,8 +15,8 @@ var Category = (function (_super) {
         _super.apply(this, arguments);
         this.data = {};
         this.onChange = function (e) {
-            var id = e.currentTarget[e.currentTarget.selectedIndex].id, index = e.currentTarget.selectedIndex, label = e.currentTarget[e.currentTarget.selectedIndex].label;
-            _this.trigger('change', { id: id, index: index, label: label });
+            var id = e.currentTarget[e.currentTarget.selectedIndex].id, category_id = e.currentTarget.selectedIndex, name = e.currentTarget[e.currentTarget.selectedIndex].label;
+            _this.trigger('change', { id: id, category_id: category_id, name: name });
         };
     }
     Category.prototype.load = function (url) {
@@ -29,7 +29,6 @@ var Category = (function (_super) {
                 self.loadData(data);
             }
         });
-        return this;
     };
     Category.prototype.loadData = function (json) {
         var _data = {};
@@ -40,7 +39,6 @@ var Category = (function (_super) {
             };
         });
         this.data = _data;
-        return this;
     };
     Category.prototype.getData = function () {
         return this.data;
@@ -66,8 +64,6 @@ var Category = (function (_super) {
         var select = $(this.selector + ' select');
         if (select.find("option:contains('" + selected + "')").attr('selected', 'selected').length > 0) {
             select.trigger('change');
-        }
-        else {
         }
     };
     return Category;

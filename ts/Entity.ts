@@ -3,14 +3,6 @@
  */
 /// <reference path="Rust.ts"/>
 
-/*
- Entity
- -onAdd(id, count=1)
- -onRemove(id, count=1)
- +draw()
- -drawUpdate(id)
- categoryChange(category)
- */
 class Entity extends EventMixin {
     private data = {};
     private selector:string;
@@ -51,17 +43,21 @@ class Entity extends EventMixin {
     }
 
     draw(selector:string) {
-        this.selector = selector;
+        var self = this;
+        self.selector = selector;
 
         $.each(this.data, function (key, value) {
-            var entity = $('<div/>', {id: key, class: 'entity', title: value.name});
-
+            var entity = $('<button/>', {
+                id: key,
+                class: 'ei_' + self.size + ' i'+key,
+                title: value.name
+            });
             $(selector).append(entity);
         });
     }
 
     categoryChange = (e) => {
-        //console.info(this.selector);
-        //console.log(e);
+        console.info(this.selector);
+        console.log(e);
     }
 }

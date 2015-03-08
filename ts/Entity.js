@@ -8,23 +8,16 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-/*
- Entity
- -onAdd(id, count=1)
- -onRemove(id, count=1)
- +draw()
- -drawUpdate(id)
- categoryChange(category)
- */
 var Entity = (function (_super) {
     __extends(Entity, _super);
     function Entity() {
+        var _this = this;
         _super.apply(this, arguments);
         this.data = {};
         this.size = 65;
         this.categoryChange = function (e) {
-            //console.info(this.selector);
-            //console.log(e);
+            console.info(_this.selector);
+            console.log(e);
         };
     }
     Entity.prototype.load = function (url) {
@@ -58,9 +51,14 @@ var Entity = (function (_super) {
         this.data = data;
     };
     Entity.prototype.draw = function (selector) {
-        this.selector = selector;
+        var self = this;
+        self.selector = selector;
         $.each(this.data, function (key, value) {
-            var entity = $('<div/>', { id: key, class: 'entity', title: value.name });
+            var entity = $('<button/>', {
+                id: key,
+                class: 'ei_' + self.size + ' i' + key,
+                title: value.name
+            });
             $(selector).append(entity);
         });
     };

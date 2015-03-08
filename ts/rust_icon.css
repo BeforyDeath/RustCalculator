@@ -1,0 +1,115 @@
+/*Rust Legacy icon Icon size 75\65\30 px*/
+
+.ei_75 {width: 75px;height: 75px;background: url(../images/rust_75x75.png)}
+.ei_65 {width: 65px;height: 65px;background: url(../images/rust_65x65.png)}
+.ei_30 {width: 30px;height: 30px;background: url(../images/rust_30x30.png)}
+
+.ei_75, .ei_65, .ei_30 {
+    display: inline-block;
+    margin: 1px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.i9mm_Ammo {background-position: 0 0}
+.i9mm_Pistol {background-position: -100% 0}
+.i556_Ammo {background-position: -200% 0}
+.iAnimal_Fat {background-position: -300% 0}
+.iAnti-Radiation_Pills {background-position: -400% 0}
+.iArrow {background-position: -500% 0}
+.iBandage {background-position: -600% 0}
+.iBed {background-position: -700% 0}
+.iBlood {background-position: -800% 0}
+.iBolt_Action_Rifle {background-position: -900% 0}
+.iCamp_Fire {background-position: 0 -100%}
+.iCharcoal {background-position: -100% -100%}
+.iCloth {background-position: -200% -100%}
+.iCloth_Boots {background-position: -300% -100%}
+.iCloth_Helmet {background-position: -400% -100%}
+.iCloth_Pants {background-position: -500% -100%}
+.iCloth_Vest {background-position: -600% -100%}
+.iCooked_Chicken_Breast {background-position: -700% -100%}
+.iExplosive_Charge {background-position: -800% -100%}
+.iExplosives {background-position: -900% -100%}
+.iF1_Grenade {background-position: 0 -200%}
+.iFlare {background-position: -100% -200%}
+.iFlashlight_Mod {background-position: -200% -200%}
+.iFurnace {background-position: -300% -200%}
+.iGunpowder {background-position: -400% -200%}
+.iHandCannon {background-position: -500% -200%}
+.iHandmade_Lockpick {background-position: -600% -200%}
+.iHandmade_Shell {background-position: -700% -200%}
+.iHatchet, .iUber_Hatchet {background-position: -800% -200%}
+.iHolo_sight {background-position: -900% -200%}
+.iHunting_Bow, .iUber_Hunting_Bow {background-position: -0px -300%}
+.iKevlar_Boots {background-position: -100% -300%}
+.iKevlar_Helmet {background-position: -200% -300%}
+.iKevlar_Pants {background-position: -300% -300%}
+.iKevlar_Vest {background-position: -400% -300%}
+.iLarge_Medkit {background-position: -500% -300%}
+.iLarge_Spike_Wall {background-position: -600% -300%}
+.iLarge_Wood_Storage {background-position: -700% -300%}
+.iLaser_Sight {background-position: -800% -300%}
+.iLeather {background-position: -900% -300%}
+.iLeather_Boots {background-position: 0 -400%}
+.iLeather_Vest {background-position: -100% -400%}
+.iLeather_Helmet {background-position: -200% -400%}
+.iLeather_Pants {background-position: -300% -400%}
+.iLow_Grade_Fuel {background-position: -400% -400%}
+.iLow_Quality_Metal {background-position: -500% -400%}
+.iM4 {background-position: -600% -400%}
+.iMetal_Ceiling {background-position: -700% -400%}
+.iMetal_Door {background-position: -800% -400%}
+.iMetal_Doorway {background-position: -900% -400%}
+.iMetal_Foundation {background-position: 0 -500%}
+.iMetal_Fragments {background-position: -100% -500%}
+.iMetal_Ore {background-position: -200% -500%}
+.iMetal_Pillar {background-position: -300% -500%}
+.iMetal_Ramp {background-position: -400% -500%}
+.iMetal_Stairs {background-position: -500% -500%}
+.iMetal_Wall {background-position: -600% -500%}
+.iMetal_Window {background-position: -700% -500%}
+.iMetal_Window_Bars {background-position: -800% -500%}
+.iMP5A4 {background-position: -900% -500%}
+.iP250 {background-position: 0 -600%}
+.iPick_Axe {background-position: -100% -600%}
+.iPipe_Shotgun {background-position: -200% -600%}
+.iRad_Suit_Boots, .iInvisible_Boots {background-position: -300% -600%}
+.iRad_Suit_Helmet, .iInvisible_Helmet {background-position: -400% -600%}
+.iRad_Suit_Pants, .iInvisible_Pants {background-position: -500% -600%}
+.iRad_Suit_Vest, .iInvisible_Vest {background-position: -600% -600%}
+.iRepair_Bench {background-position: -700% -600%}
+.iResearch_Kit_1 {background-position: -800% -600%}
+.iRevolver {background-position: -900% -600%}
+.iShotgun {background-position: 0 -700%}
+.iShotgun_Shells {background-position: -100% -700%}
+.iSilencer {background-position: -200% -700%}
+.iSleeping_Bag {background-position: -300% -700%}
+.iSmall_Medkit {background-position: -400% -700%}
+.iSmall_Stash {background-position: -500% -700%}
+.iSpike_Wall {background-position: -600% -700%}
+.iStone_Hatchet {background-position: -700% -700%}
+.iStones {background-position: -800% -700%}
+.iSulfur {background-position: -900% -700%}
+.iSulfur_Ore {background-position: 0 -800%}
+.iSupply_Signal {background-position: -100% -800%}
+.iWood {background-position: -200% -800%}
+.iWood_Barricade {background-position: -300% -800%}
+.iWood_Ceiling {background-position: -400% -800%}
+.iWood_Doorway {background-position: -500% -800%}
+.iWood_Foundation {background-position: -600% -800%}
+.iWood_Gate {background-position: -700% -800%}
+.iWood_Gateway {background-position: -800% -800%}
+.iWood_Pillar {background-position: -900% -800%}
+.iWood_Planks {background-position: 0 -900%}
+.iWood_Ramp {background-position: -100% -900%}
+.iWood_Shelter {background-position: -200% -900%}
+.iWood_Stairs {background-position: -300% -900%}
+.iWood_Storage_Box {background-position: -400% -900%}
+.iWood_Wall {background-position: -500% -900%}
+.iWood_Window {background-position: -600% -900%}
+.iWooden_Door {background-position: -700% -900%}
+.iWorkbench {background-position: -800% -900%}
+.iNone {background-position: -900% -900%}
+.iTorch {background-position: -0% -1000%}

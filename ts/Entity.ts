@@ -21,7 +21,7 @@ class Entity extends EventMixin {
         return this;
     }
 
-    loadData(json) {
+    private loadData(json) {
         var _data = {};
         $.each(json.entity, function (key, value) {
             _data[key.replace(/ /g, '_')] = {
@@ -49,15 +49,18 @@ class Entity extends EventMixin {
         $.each(this.data, function (key, value) {
             var entity = $('<button/>', {
                 id: key,
-                class: 'ei_' + self.size + ' i'+key,
-                title: value.name
+                class: 'ei_' + self.size + ' i' + key,
+                title: value.name,
+                val: value.category_id
             });
             $(selector).append(entity);
         });
     }
 
     categoryChange = (e) => {
-        console.info(this.selector);
-        console.log(e);
+        $(this.selector + ' button').hide();
+        $(this.selector).find('button[value=' + e.index + ']').show();
+        //console.info(this.selector);
+        //console.log(e);
     }
 }

@@ -16,8 +16,10 @@ var Entity = (function (_super) {
         this.data = {};
         this.size = 65;
         this.categoryChange = function (e) {
-            console.info(_this.selector);
-            console.log(e);
+            $(_this.selector + ' button').hide();
+            $(_this.selector).find('button[value=' + e.index + ']').show();
+            //console.info(this.selector);
+            //console.log(e);
         };
     }
     Entity.prototype.load = function (url) {
@@ -57,7 +59,8 @@ var Entity = (function (_super) {
             var entity = $('<button/>', {
                 id: key,
                 class: 'ei_' + self.size + ' i' + key,
-                title: value.name
+                title: value.name,
+                val: value.category_id
             });
             $(selector).append(entity);
         });

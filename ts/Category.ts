@@ -20,7 +20,7 @@ class Category extends EventMixin {
         return this;
     }
 
-    loadData(json) {
+    private loadData(json) {
         var _data = {};
         $.each(json.category, function (key, value) {
             _data[key.replace(/ /g, '_')] = {

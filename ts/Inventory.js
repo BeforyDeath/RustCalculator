@@ -19,10 +19,17 @@ var __extends = this.__extends || function (d, b) {
  save
 
  data: {
- 0:
+ 0: {
  id: ''
- count: 1
- }
+ count:
+ }}
+
+ kit: {
+ id: {
+ count:
+ stag:
+ }}
+
  */
 var Inventory = (function (_super) {
     __extends(Inventory, _super);
@@ -30,25 +37,29 @@ var Inventory = (function (_super) {
         var _this = this;
         _super.apply(this, arguments);
         this.data = {};
+        this.kit = {};
         this.size = 75;
         this.slot = 36;
-        this.addInventory = function (e) {
-            var is_new = true, is_full = true;
-            for (var slot in _this.data) {
-                if (e.id == _this.data[slot].id) {
-                    _this.data[slot].count += e.count;
-                    is_new = false;
+        this.addKit = function (e) {
+            var count = 1, is_full = false;
+            if (e.count > 1)
+                count = e.count;
+            if (_this.kit[e.id]) {
+                count = _this.kit[e.id].count + e.count;
+                if (_this.addInventory(e.id, e.count, count)) {
+                    _this.kit[e.id].count = count;
                 }
+                else
+                    is_full = true;
             }
-            if (is_new) {
-                for (var slot in _this.data) {
-                    if (_this.data[slot].count == 0) {
-                        _this.data[slot].id = e.id;
-                        _this.data[slot].count = e.count;
-                        is_full = false;
-                        break;
-                    }
+            else {
+                if (_this.addInventory(e.id, e.count, count)) {
+                    _this.kit[e.id] = { count: e.count, stag: e.stag };
                 }
+                else
+                    is_full = true;
+            }
+            if (is_full) {
             }
         };
         this.onClick = function (e) {
@@ -68,6 +79,29 @@ var Inventory = (function (_super) {
             $(entity).on('click', this.onClick);
             $(selector).append(entity);
         }
+    };
+    Inventory.prototype.addInventory = function (id, add_count, kit_count) {
+        console.log(id, add_count, kit_count);
+        //var is_new = true,
+        //    is_full = true;
+        //
+        //for (var slot in this.data) {
+        //    if (e.id == this.data[slot].id) {
+        //        this.data[slot].count += e.count;
+        //        is_new = false;
+        //    }
+        //}
+        //if (is_new) {
+        //    for (var slot in this.data) {
+        //        if (this.data[slot].count == 0) {
+        //            this.data[slot].id = e.id;
+        //            this.data[slot].count = e.count;
+        //            is_full = false;
+        //            break;
+        //        }
+        //    }
+        //}
+        return true;
     };
     return Inventory;
 })(EventMixin);

@@ -1,20 +1,15 @@
-/**
- * Created by beforydeath on 05.03.15.
- */
-/// <reference path="Rust.ts"/>
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     __.prototype = b.prototype;
     d.prototype = new __();
 };
+/// <reference path="Rust.ts"/>
 var Entity = (function (_super) {
     __extends(Entity, _super);
     function Entity() {
         var _this = this;
         _super.apply(this, arguments);
-        this.data = {};
-        this.size = 65;
         this.categoryChange = function (e) {
             if (e.category_id > 0) {
                 $(_this.selector + ' button').hide();
@@ -28,17 +23,6 @@ var Entity = (function (_super) {
             _this.trigger('click', { id: id, category_id: category_id, name: name, stag: stag, count: count });
         };
     }
-    Entity.prototype.load = function (url) {
-        var self = this;
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                self.loadData(data);
-            }
-        });
-    };
     Entity.prototype.loadData = function (json) {
         var _data = {};
         $.each(json.entity, function (key, value) {
@@ -49,12 +33,6 @@ var Entity = (function (_super) {
             };
         });
         this.data = _data;
-    };
-    Entity.prototype.getData = function () {
-        return this.data;
-    };
-    Entity.prototype.setData = function (data) {
-        this.data = data;
     };
     Entity.prototype.draw = function (selector) {
         var self = this;
@@ -71,5 +49,5 @@ var Entity = (function (_super) {
         });
     };
     return Entity;
-})(EventMixin);
+})(Rust);
 //# sourceMappingURL=Entity.js.map

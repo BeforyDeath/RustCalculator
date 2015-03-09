@@ -1,35 +1,20 @@
-/**
- * Created by beforydeath on 05.03.15.
- */
-/// <reference path="Rust.ts"/>
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     __.prototype = b.prototype;
     d.prototype = new __();
 };
+/// <reference path="Rust.ts"/>
 var Category = (function (_super) {
     __extends(Category, _super);
     function Category() {
         var _this = this;
         _super.apply(this, arguments);
-        this.data = {};
         this.onChange = function (e) {
             var id = e.currentTarget[e.currentTarget.selectedIndex].id, category_id = e.currentTarget.selectedIndex, name = e.currentTarget[e.currentTarget.selectedIndex].label;
             _this.trigger('change', { id: id, category_id: category_id, name: name });
         };
     }
-    Category.prototype.load = function (url) {
-        var self = this;
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                self.loadData(data);
-            }
-        });
-    };
     Category.prototype.loadData = function (json) {
         var _data = {};
         $.each(json.category, function (key, value) {
@@ -39,12 +24,6 @@ var Category = (function (_super) {
             };
         });
         this.data = _data;
-    };
-    Category.prototype.getData = function () {
-        return this.data;
-    };
-    Category.prototype.setData = function (data) {
-        this.data = data;
     };
     Category.prototype.draw = function (selector) {
         this.selector = selector;
@@ -67,5 +46,5 @@ var Category = (function (_super) {
         }
     };
     return Category;
-})(EventMixin);
+})(Rust);
 //# sourceMappingURL=Category.js.map

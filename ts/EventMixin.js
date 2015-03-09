@@ -1,6 +1,3 @@
-/**
- * Created by beforydeath on 06.03.15.
- */
 var EventMixin = (function () {
     function EventMixin() {
         var _this = this;

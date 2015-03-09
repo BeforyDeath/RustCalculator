@@ -1,7 +1,3 @@
-/**
- * Created by beforydeath on 06.03.15.
- */
-
 class EventMixin {
     private _eventHandlers = [];
     on = (eventName, handler) => {
@@ -11,6 +7,7 @@ class EventMixin {
         }
         this._eventHandlers[eventName].push(handler);
     };
+
     off = (eventName, handler) => {
         var handlers = this._eventHandlers[eventName];
         if (!handlers) return;

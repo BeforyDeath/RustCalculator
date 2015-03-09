@@ -1,25 +1,7 @@
-/**
- * Created by beforydeath on 05.03.15.
- */
 /// <reference path="Rust.ts"/>
+class Category extends Rust {
 
-class Category extends EventMixin {
-    private data = {};
-    private selector:string;
-
-    load(url:string) {
-        var self = this;
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                self.loadData(data);
-            }
-        });
-    }
-
-    private loadData(json) {
+    loadData(json) {
         var _data = {};
         $.each(json.category, function (key, value) {
             _data[key.replace(/ /g, '_')] = {
@@ -28,14 +10,6 @@ class Category extends EventMixin {
             };
         });
         this.data = _data;
-    }
-
-    getData() {
-        return this.data;
-    }
-
-    setData(data) {
-        this.data = data;
     }
 
     draw(selector:string) {
@@ -59,7 +33,7 @@ class Category extends EventMixin {
         }
     }
 
-    private onChange = (e) => {
+    onChange = (e) => {
         var id = e.currentTarget[e.currentTarget.selectedIndex].id,
             category_id = e.currentTarget.selectedIndex,
             name = e.currentTarget[e.currentTarget.selectedIndex].label;

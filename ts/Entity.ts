@@ -1,26 +1,7 @@
-/**
- * Created by beforydeath on 05.03.15.
- */
 /// <reference path="Rust.ts"/>
+class Entity extends Rust {
 
-class Entity extends EventMixin {
-    private data = {};
-    private selector:string;
-    public size:number = 65;
-
-    load(url:string) {
-        var self = this;
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                self.loadData(data);
-            }
-        });
-    }
-
-    private loadData(json) {
+    loadData(json) {
         var _data = {};
         $.each(json.entity, function (key, value) {
             _data[key.replace(/ /g, '_')] = {
@@ -30,14 +11,6 @@ class Entity extends EventMixin {
             };
         });
         this.data = _data;
-    }
-
-    getData() {
-        return this.data;
-    }
-
-    setData(data) {
-        this.data = data;
     }
 
     draw(selector:string) {
@@ -62,7 +35,7 @@ class Entity extends EventMixin {
         } else $(this.selector + ' button').show();
     };
 
-    private onClick = (e) => {
+    onClick = (e) => {
         var id = e.currentTarget.id,
             category_id = e.currentTarget.value,
             name = e.currentTarget.title,

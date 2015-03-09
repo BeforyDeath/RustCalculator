@@ -28,7 +28,6 @@ var EventMixin = (function () {
                 //console.info('eventHandlers no "' + eventName + '" event');
                 return;
             }
-            // вызвать обработчики
             var handlers = _this._eventHandlers[eventName];
             for (var i = 0; i < handlers.length; i++) {
                 handlers[i].apply(_this, [].slice.call(arguments, 1));

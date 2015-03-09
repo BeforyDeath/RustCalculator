@@ -22,31 +22,31 @@
     },
     "entity": {
         "Invisible Boots": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Invisible Helmet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Invisible Pants": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Invisible Vest": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Uber Hatchet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Uber Hunting Bow": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 1
         },
         "Animal Fat": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -54,7 +54,7 @@
             }
         },
         "Blood": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -62,7 +62,7 @@
             }
         },
         "Cloth": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -70,7 +70,7 @@
             }
         },
         "Metal Ore": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -78,7 +78,7 @@
             }
         },
         "Stones": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -86,7 +86,7 @@
             }
         },
         "Sulfur Ore": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -94,7 +94,7 @@
             }
         },
         "Wood": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 2,
             "price": {
                 "value": 1,
@@ -102,7 +102,7 @@
             }
         },
         "556 Ammo": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 3,
             "craft": {
                 "Gunpowder": 5,
@@ -110,7 +110,7 @@
             }
         },
         "9mm Ammo": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 3,
             "craft": {
                 "Gunpowder": 3,
@@ -118,7 +118,7 @@
             }
         },
         "Arrow": {
-            "slot": 10,
+            "stag": 10,
             "category_id": 3,
             "craft": {
                 "Stones": 1,
@@ -126,7 +126,7 @@
             }
         },
         "Handmade Shell": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 3,
             "craft": {
                 "Gunpowder": 5,
@@ -134,7 +134,7 @@
             }
         },
         "Shotgun Shells": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 3,
             "craft": {
                 "Gunpowder": 5,
@@ -142,35 +142,35 @@
             }
         },
         "Cloth Boots": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 4,
             "craft": {
                 "Cloth": 3
             }
         },
         "Cloth Helmet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 4,
             "craft": {
                 "Cloth": 5
             }
         },
         "Cloth Pants": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 4,
             "craft": {
                 "Cloth": 8
             }
         },
         "Cloth Vest": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 4,
             "craft": {
                 "Cloth": 10
             }
         },
         "Kevlar Boots": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 5,
             "craft": {
                 "Leather": 3,
@@ -178,7 +178,7 @@
             }
         },
         "Kevlar Helmet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 5,
             "craft": {
                 "Leather": 3,
@@ -186,7 +186,7 @@
             }
         },
         "Kevlar Pants": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 5,
             "craft": {
                 "Leather": 4,
@@ -194,7 +194,7 @@
             }
         },
         "Kevlar Vest": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 5,
             "craft": {
                 "Leather": 4,
@@ -202,35 +202,35 @@
             }
         },
         "Leather Boots": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 6,
             "craft": {
                 "Leather": 4
             }
         },
         "Leather Helmet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 6,
             "craft": {
                 "Leather": 7
             }
         },
         "Leather Pants": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 6,
             "craft": {
                 "Leather": 12
             }
         },
         "Leather Vest": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 6,
             "craft": {
                 "Leather": 15
             }
         },
         "Rad Suit Boots": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 7,
             "craft": {
                 "Cloth": 10,
@@ -238,7 +238,7 @@
             }
         },
         "Rad Suit Helmet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 7,
             "craft": {
                 "Cloth": 10,
@@ -246,7 +246,7 @@
             }
         },
         "Rad Suit Pants": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 7,
             "craft": {
                 "Cloth": 15,
@@ -254,7 +254,7 @@
             }
         },
         "Rad Suit Vest": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 7,
             "craft": {
                 "Cloth": 15,
@@ -262,7 +262,7 @@
             }
         },
         "Explosive Charge": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 8,
             "craft": {
                 "Explosives": 15,
@@ -271,7 +271,7 @@
             }
         },
         "Explosives": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 8,
             "craft": {
                 "Gunpowder": 20,
@@ -281,7 +281,7 @@
             }
         },
         "F1 Grenade": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 8,
             "craft": {
                 "Gunpowder": 80,
@@ -289,84 +289,84 @@
             }
         },
         "Wood Ceiling": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 6
             }
         },
         "Wood Doorway": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 4
             }
         },
         "Wood Foundation": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 8
             }
         },
         "Wood Pillar": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 2
             }
         },
         "Wood Ramp": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 5
             }
         },
         "Wood Shelter": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 9,
             "craft": {
                 "Wood": 50
             }
         },
         "Wood Stairs": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 5
             }
         },
         "Wood Wall": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 4
             }
         },
         "Wood Window": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood Planks": 4
             }
         },
         "Wooden Door": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 9,
             "craft": {
                 "Wood": 20
             }
         },
         "Cooked Chicken Breast": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 10,
             "craft": {
                 "Wood": 1
             }
         },
         "Bed": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 11,
             "craft": {
                 "Cloth": 40,
@@ -374,95 +374,95 @@
             }
         },
         "Sleeping Bag": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 11,
             "craft": {
                 "Cloth": 15
             }
         },
         "Metal Ceiling": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 6
             }
         },
         "Metal Door": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 12,
             "craft": {
                 "Metal Fragments": 200
             }
         },
         "Metal Doorway": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 4
             }
         },
         "Metal Foundation": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 8
             }
         },
         "Metal Pillar": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 2
             }
         },
         "Metal Ramp": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 5
             }
         },
         "Metal Stairs": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 5
             }
         },
         "Metal Wall": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 4
             }
         },
         "Metal Window Bars": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 12,
             "craft": {
                 "Metal Fragments": 100
             }
         },
         "Metal Window": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 12,
             "craft": {
                 "Low Quality Metal": 4
             }
         },
         "Anti-Radiation Pills": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 13
         },
         "Bandage": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 13,
             "craft": {
                 "Cloth": 2
             }
         },
         "Large Medkit": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 13,
             "craft": {
                 "Blood": 3,
@@ -470,7 +470,7 @@
             }
         },
         "Small Medkit": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 13,
             "craft": {
                 "Blood": 2,
@@ -478,42 +478,42 @@
             }
         },
         "Flashlight Mod": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 14,
             "craft": {
                 "Low Quality Metal": 5
             }
         },
         "Holo sight": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 14,
             "craft": {
                 "Low Quality Metal": 5
             }
         },
         "Laser Sight": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 14,
             "craft": {
                 "Low Quality Metal": 5
             }
         },
         "Silencer": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 14,
             "craft": {
                 "Low Quality Metal": 8
             }
         },
         "9mm Pistol": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Low Quality Metal": 10
             }
         },
         "Bolt Action Rifle": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Leather": 20,
@@ -522,7 +522,7 @@
             }
         },
         "HandCannon": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Metal Fragments": 10,
@@ -530,28 +530,28 @@
             }
         },
         "M4": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Low Quality Metal": 30
             }
         },
         "MP5A4": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Low Quality Metal": 20
             }
         },
         "P250": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Low Quality Metal": 12
             }
         },
         "Pipe Shotgun": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Metal Fragments": 40,
@@ -559,7 +559,7 @@
             }
         },
         "Revolver": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Cloth": 10,
@@ -568,14 +568,14 @@
             }
         },
         "Shotgun": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Low Quality Metal": 12
             }
         },
         "Charcoal": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "furnace": {
                 "items": {
@@ -585,7 +585,7 @@
             }
         },
         "Gunpowder": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 8,
             "craft": {
                 "Charcoal": 2,
@@ -593,7 +593,7 @@
             }
         },
         "Leather": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "furnace": {
                 "items": {
@@ -604,7 +604,7 @@
             }
         },
         "Low Grade Fuel": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 8,
             "craft": {
                 "Animal Fat": 2,
@@ -612,14 +612,14 @@
             }
         },
         "Low Quality Metal": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "craft": {
                 "Metal Fragments": 15
             }
         },
         "Metal Fragments": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "furnace": {
                 "items": {
@@ -630,7 +630,7 @@
             }
         },
         "Sulfur": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "furnace": {
                 "items": {
@@ -641,21 +641,21 @@
             }
         },
         "Wood Planks": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 16,
             "craft": {
                 "Wood": 10
             }
         },
         "Camp Fire": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 17,
             "craft": {
                 "Wood": 5
             }
         },
         "Furnace": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 17,
             "craft": {
                 "Low Grade Fuel": 10,
@@ -664,7 +664,7 @@
             }
         },
         "Repair Bench": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 17,
             "craft": {
                 "Low Grade Fuel": 6,
@@ -674,7 +674,7 @@
             }
         },
         "Workbench": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 17,
             "craft": {
                 "Stones": 8,
@@ -682,11 +682,11 @@
             }
         },
         "Supply Signal": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 18
         },
         "Flare": {
-            "slot": 10,
+            "stag": 10,
             "category_id": 18,
             "craft": {
                 "Gunpowder": 8,
@@ -694,7 +694,7 @@
             }
         },
         "Handmade Lockpick": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 18,
             "craft": {
                 "Cloth": 5,
@@ -702,7 +702,7 @@
             }
         },
         "Research Kit 1": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 18,
             "craft": {
                 "Low Quality Metal": 20,
@@ -710,7 +710,7 @@
             }
         },
         "Torch": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 18,
             "craft": {
                 "Low Grade Fuel": 1,
@@ -719,42 +719,42 @@
             }
         },
         "Large Spike Wall": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 9,
             "craft": {
                 "Wood": 200
             }
         },
         "Spike Wall": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 9,
             "craft": {
                 "Wood": 100
             }
         },
         "Wood Barricade": {
-            "slot": 250,
+            "stag": 250,
             "category_id": 9,
             "craft": {
                 "Wood": 30
             }
         },
         "Wood Gate": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 9,
             "craft": {
                 "Wood": 120
             }
         },
         "Wood Gateway": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 9,
             "craft": {
                 "Wood": 400
             }
         },
         "Hatchet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Metal Fragments": 10,
@@ -762,7 +762,7 @@
             }
         },
         "Hunting Bow": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Cloth": 5,
@@ -770,7 +770,7 @@
             }
         },
         "Pick Axe": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Metal Fragments": 15,
@@ -778,7 +778,7 @@
             }
         },
         "Stone Hatchet": {
-            "slot": 1,
+            "stag": 1,
             "category_id": 15,
             "craft": {
                 "Stones": 5,
@@ -786,38 +786,33 @@
             }
         },
         "Large Wood Storage": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 9,
             "craft": {
                 "Wood": 60
             }
         },
         "Small Stash": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 18,
             "craft": {
                 "Leather": 10
             }
         },
         "Wood Storage Box": {
-            "slot": 5,
+            "stag": 5,
             "category_id": 9,
             "craft": {
                 "Wood": 30
             }
         }
     },
-    "inventory": {
-        "countSlot": 6,
-        "slot": {
-            "0": {
-                "entity": "Metal Fragments",
-                "count": 150
-            },
-            "6": {
-                "entity": "Metal Fragments",
-                "count": 56
-            }
+    "kit": {
+        "Wood Storage Box": {
+            "count": 150
+        },
+        "Small Stash": {
+            "count": 56
         }
     }
 }

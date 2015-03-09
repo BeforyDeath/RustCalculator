@@ -9,61 +9,63 @@ var __extends = this.__extends || function (d, b) {
     d.prototype = new __();
 };
 /*
-draw
-load
-sort
+ inventory
+ draw
+ sort
 
-draw kit
+ kit
+ draw
+ load
+ save
 
-
-
+ data: {
+ 0:
+ id: ''
+ count: 1
+ }
  */
 var Inventory = (function (_super) {
     __extends(Inventory, _super);
     function Inventory() {
+        var _this = this;
         _super.apply(this, arguments);
-        this.slot = 36;
-        this.size = 65;
         this.data = {};
-    }
-    Inventory.prototype.load = function (url) {
-        var self = this;
-        $.ajax({
-            url: url,
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                self.loadData(data);
+        this.size = 75;
+        this.slot = 36;
+        this.addInventory = function (e) {
+            var is_new = true, is_full = true;
+            for (var slot in _this.data) {
+                if (e.id == _this.data[slot].id) {
+                    _this.data[slot].count += e.count;
+                    is_new = false;
+                }
             }
-        });
-    };
-    Inventory.prototype.loadData = function (json) {
-        var _data = {};
-        this.slot = json.inventory.countSlot;
-        $.each(json.inventory.slot, function (key, value) {
-            _data[key] = {
-                id: value.entity.replace(/ /g, '_'),
-                name: value.entity,
-                count: value.count
-            };
-        });
-        this.data = _data;
-    };
-    Inventory.prototype.getData = function () {
-        return this.data;
-    };
-    Inventory.prototype.setData = function (data) {
-        this.data = data;
-    };
+            if (is_new) {
+                for (var slot in _this.data) {
+                    if (_this.data[slot].count == 0) {
+                        _this.data[slot].id = e.id;
+                        _this.data[slot].count = e.count;
+                        is_full = false;
+                        break;
+                    }
+                }
+            }
+        };
+        this.onClick = function (e) {
+            console.log(e.currentTarget.id);
+            console.log(e.currentTarget.value);
+        };
+    }
     Inventory.prototype.draw = function (selector) {
-        var self = this;
-        self.selector = selector;
+        this.selector = selector;
         for (var i = 0; i < this.slot; i++) {
+            this.data[i] = { id: '', count: 0 };
             var entity = $('<button/>', {
                 id: 'slot' + i,
-                class: 'ei_' + this.size
+                val: i,
+                class: 'is_' + this.size
             });
-            //$(entity).on('click', self.onClick);
+            $(entity).on('click', this.onClick);
             $(selector).append(entity);
         }
     };

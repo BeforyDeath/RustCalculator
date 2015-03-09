@@ -24,8 +24,8 @@ var Entity = (function (_super) {
                 $(_this.selector + ' button').show();
         };
         this.onClick = function (e) {
-            var id = e.currentTarget.id, category_id = e.currentTarget.value, name = e.currentTarget.title;
-            _this.trigger('click', { id: id, category_id: category_id, name: name });
+            var id = e.currentTarget.id, category_id = e.currentTarget.value, name = e.currentTarget.title, stag = _this.data[id].stag, count = 1;
+            _this.trigger('click', { id: id, category_id: category_id, name: name, stag: stag, count: count });
         };
     }
     Entity.prototype.load = function (url) {
@@ -45,7 +45,7 @@ var Entity = (function (_super) {
             _data[key.replace(/ /g, '_')] = {
                 name: key,
                 category_id: value.category_id,
-                slot: value.slot
+                stag: value.stag
             };
         });
         this.data = _data;

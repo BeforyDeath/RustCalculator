@@ -4,7 +4,11 @@
 .ei_65 {width: 65px;height: 65px;background: url(../images/rust_65x65.png)}
 .ei_30 {width: 30px;height: 30px;background: url(../images/rust_30x30.png)}
 
-.ei_75, .ei_65, .ei_30 {
+.is_75 {width: 75px;height: 75px;display: block)}
+.is_65 {width: 65px;height: 65px;display: block)}
+.is_30 {width: 30px;height: 30px;display: block)}
+
+.is_75, .is_65, .is_30, .ei_75, .ei_65, .ei_30 {
     display: inline-block;
     margin: 1px;
     padding: 0;

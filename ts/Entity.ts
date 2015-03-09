@@ -26,7 +26,7 @@ class Entity extends EventMixin {
             _data[key.replace(/ /g, '_')] = {
                 name: key,
                 category_id: value.category_id,
-                slot: value.slot
+                stag: value.stag
             };
         });
         this.data = _data;
@@ -65,7 +65,9 @@ class Entity extends EventMixin {
     private onClick = (e) => {
         var id = e.currentTarget.id,
             category_id = e.currentTarget.value,
-            name = e.currentTarget.title;
-        this.trigger('click', {id: id, category_id: category_id, name: name});
+            name = e.currentTarget.title,
+            stag = this.data[id].stag,
+            count = 1;
+        this.trigger('click', {id: id, category_id: category_id, name: name, stag: stag, count: count});
     }
 }

@@ -25,7 +25,6 @@ class EventMixin {
             //console.info('eventHandlers no "' + eventName + '" event');
             return;
         }
-        // вызвать обработчики
         var handlers = this._eventHandlers[eventName];
         for (var i = 0; i < handlers.length; i++) {
             handlers[i].apply(this, [].slice.call(arguments, 1));

@@ -2,14 +2,17 @@
     "entity": {
         "Building Plan": {
             "stag": 1,
-            "category": "Construction"
+            "category": "Construction",
+            "craft": {
+                "Paper": 1
+            }
         },
         "Code Lock": {
             "stag": 1,
             "category": "Construction",
             "craft": {
-                "Wood": 500,
-                "Metal Fragments": 50
+                "Metal Fragments": 50,
+                "Wood": 500
             }
         },
         "Lock": {
@@ -25,6 +28,10 @@
             "craft": {
                 "Wood": 1000
             }
+        },
+        "Bed": {
+            "stag": 1,
+            "category": "Items"
         },
         "Camp Fire": {
             "stag": 1,
@@ -54,16 +61,16 @@
             "stag": 1,
             "category": "Items",
             "craft": {
-                "Wood": 250,
-                "Metal Fragments": 10
+                "Metal Fragments": 10,
+                "Wood": 250
             }
         },
         "Repair Bench": {
             "stag": 1,
             "category": "Items",
             "craft": {
-                "Wood": 500,
-                "Metal Fragments": 100
+                "Metal Fragments": 100,
+                "Wood": 500
             }
         },
         "Sleeping Bag": {
@@ -81,37 +88,139 @@
                 "Wood": 100
             }
         },
-        "Explosives": {
-            "stag": 0,
+        "Animal Fat": {
+            "stag": 1000,
+            "category": "Resources"
+        },
+        "Battery - Small": {
+            "stag": 1,
+            "category": "Resources"
+        },
+        "Bone Fragments": {
+            "stag": 1000,
             "category": "Resources",
             "craft": {
+                "Human Skull": 1
+            }
+        },
+        "Charcoal": {
+            "stag": 500,
+            "category": "Resources",
+            "furnace": {
+                "items": {
+                    "Wood": 1
+                },
+                "result": 1
+            }
+        },
+        "Cloth": {
+            "stag": 1000,
+            "category": "Resources"
+        },
+        "Empty Can Of Beans": {
+            "stag": 1,
+            "category": "Resources"
+        },
+        "Empty Tuna Can": {
+            "stag": 1,
+            "category": "Resources"
+        },
+        "Explosives": {
+            "stag": 100,
+            "category": "Resources",
+            "craft": {
+                "Metal Fragments": 10,
                 "Gun Powder": 50,
                 "Low Grade Fuel": 3,
-                "Sulfur": 10,
-                "Metal Fragments": 10
+                "Sulfur": 10
             }
         },
         "Gun Powder": {
-            "stag": 0,
+            "stag": 1000,
             "category": "Resources",
             "craft": {
                 "Charcoal": 10,
                 "Sulfur": 10
             }
         },
+        "Human Skull": {
+            "stag": 1,
+            "category": "Resources"
+        },
         "Low Grade Fuel": {
-            "stag": 0,
+            "stag": 1000,
             "category": "Resources",
             "craft": {
                 "Animal Fat": 2,
                 "Cloth": 1
             }
         },
+        "Metal - Refined": {
+            "stag": 100,
+            "category": "Resources"
+        },
+        "Metal Fragments": {
+            "stag": 1000,
+            "category": "Resources",
+            "furnace": {
+                "items": {
+                    "Metal Ore": 1,
+                    "Wood": 1
+                },
+                "result": 1
+            }
+        },
+        "Metal Ore": {
+            "stag": 1000,
+            "category": "Resources"
+        },
         "Paper": {
-            "stag": 0,
+            "stag": 1000,
             "category": "Resources",
             "craft": {
                 "Wood": 100
+            }
+        },
+        "Stones": {
+            "stag": 1000,
+            "category": "Resources"
+        },
+        "Sulfur": {
+            "stag": 1000,
+            "category": "Resources",
+            "furnace": {
+                "items": {
+                    "Sulfur Ore": 1,
+                    "Wood": 1
+                },
+                "result": 1
+            }
+        },
+        "Sulfur Ore": {
+            "stag": 1000,
+            "category": "Resources"
+        },
+        "Wolf Skull": {
+            "stag": 1,
+            "category": "Resources"
+        },
+        "Wood": {
+            "stag": 1000,
+            "category": "Resources"
+        },
+        "Blue Longsleeve T-Shirt": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 50
+            }
+        },
+        "Bucket Helmet": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 50,
+                "Cloth": 20
             }
         },
         "Burlap Shirt": {
@@ -135,6 +244,14 @@
                 "Cloth": 30
             }
         },
+        "Coffee Can Helmet": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 20,
+                "Cloth": 20
+            }
+        },
         "Green T-Shirt": {
             "stag": 1,
             "category": "Attire",
@@ -142,11 +259,40 @@
                 "Cloth": 50
             }
         },
+        "Hazmat Boots": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 20
+            }
+        },
         "Hazmat Gloves": {
             "stag": 1,
             "category": "Attire",
             "craft": {
                 "Cloth": 20
+            }
+        },
+        "Hazmat Helmet": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 50,
+                "Cloth": 20
+            }
+        },
+        "Hazmat Jacket": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 30
+            }
+        },
+        "Hazmat Pants": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 30
             }
         },
         "Hide Boots": {
@@ -177,6 +323,51 @@
                 "Cloth": 50
             }
         },
+        "Leather Gloves": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 20
+            }
+        },
+        "Metal Chest Plate": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 50,
+                "Cloth": 20
+            }
+        },
+        "Metal Facemask": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 50,
+                "Cloth": 20
+            }
+        },
+        "Red Jacket": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 5,
+                "Cloth": 80
+            }
+        },
+        "Show Jacket - Black": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 150
+            }
+        },
+        "Show Jacket - Red": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Cloth": 150
+            }
+        },
         "Show Jacket - Wood Camo": {
             "stag": 1,
             "category": "Attire",
@@ -188,17 +379,30 @@
             "stag": 1,
             "category": "Attire",
             "craft": {
-                "Cloth": 50,
-                "Metal Fragments": 15
+                "Metal Fragments": 15,
+                "Cloth": 50
             }
         },
         "Urban Pants": {
             "stag": 1,
             "category": "Attire",
             "craft": {
-                "Cloth": 80,
-                "Metal Fragments": 5
+                "Metal Fragments": 5,
+                "Cloth": 80
             }
+        },
+        "Vagabond Jacket": {
+            "stag": 1,
+            "category": "Attire",
+            "craft": {
+                "Metal Fragments": 50,
+                "Burlap Shirt": 2,
+                "Cloth": 100
+            }
+        },
+        "Flare": {
+            "stag": 1,
+            "category": "Tool"
         },
         "Hammer": {
             "stag": 1,
@@ -207,12 +411,32 @@
                 "Wood": 100
             }
         },
+        "Hatchet": {
+            "stag": 1,
+            "category": "Tool",
+            "craft": {
+                "Metal Fragments": 50,
+                "Wood": 100
+            }
+        },
         "Pick Axe": {
             "stag": 1,
             "category": "Tool",
             "craft": {
-                "Wood": 100,
-                "Metal Fragments": 50
+                "Metal Fragments": 50,
+                "Wood": 100
+            }
+        },
+        "Rock": {
+            "stag": 1,
+            "category": "Tool"
+        },
+        "Salvaged Axe": {
+            "stag": 1,
+            "category": "Tool",
+            "craft": {
+                "Metal Fragments": 250,
+                "Wood": 50
             }
         },
         "Salvaged Hammer": {
@@ -220,6 +444,14 @@
             "category": "Tool",
             "craft": {
                 "Wood": 100
+            }
+        },
+        "Salvaged Icepick": {
+            "stag": 1,
+            "category": "Tool",
+            "craft": {
+                "Metal Fragments": 250,
+                "Wood": 50
             }
         },
         "Stone Hatchet": {
@@ -239,7 +471,7 @@
             }
         },
         "Timed Explosive Charge": {
-            "stag": 0,
+            "stag": 10,
             "category": "Tool",
             "craft": {
                 "Explosives": 25,
@@ -250,8 +482,25 @@
             "stag": 1,
             "category": "Tool",
             "craft": {
-                "Wood": 100
+                "Low Grade Fuel": 20,
+                "Cloth": 1,
+                "Wood": 30
             }
+        },
+        "Anti-Radiation Pills": {
+            "star": 10,
+            "category": "Medical"
+        },
+        "Bandage": {
+            "stag": 10,
+            "category": "Medical",
+            "craft": {
+                "Cloth": 6
+            }
+        },
+        "Blood": {
+            "stag": 1000,
+            "category": "Medical"
         },
         "Large Medkit": {
             "stag": 0,
@@ -261,20 +510,31 @@
                 "Low Grade Fuel": 50
             }
         },
-        "Bandage": {
-            "stag": 0,
-            "category": "Medical",
-            "craft": {
-                "Cloth": 6
-            }
-        },
         "Medical Syringe": {
             "stag": 0,
             "category": "Medical",
             "craft": {
                 "Cloth": 15,
                 "Metal Fragments": 10,
-                "Low Grade Fuel": 10
+                "Low Grade Fuel": 10,
+                "Cloth": 15
+            }
+        },
+        "Assault Rifle": {
+            "stag": 1,
+            "category": "Weapon",
+            "graft": {
+                "Metal Fragments": 500,
+                "Wood": 200
+            }
+        },
+        "Bolt Action Rifle": {
+            "stag": 1,
+            "category": "Weapon",
+            "graft": {
+                "Metal Fragments": 300,
+                "Wood": 200,
+                "Cloth": 100
             }
         },
         "Bone Knife": {
@@ -289,8 +549,8 @@
             "stag": 1,
             "category": "Weapon",
             "craft": {
-                "Wood": 200,
-                "Metal Fragments": 50
+                "Metal Fragments": 50,
+                "Wood": 200
             }
         },
         "Hunting Bow": {
@@ -298,6 +558,24 @@
             "category": "Weapon",
             "craft": {
                 "Wood": 200,
+                "Cloth": 50
+            }
+        },
+        "Pump Shotgun": {
+            "stag": 1,
+            "category": "Weapon",
+            "craft": {
+                "Metal Fragments": 300,
+                "Wood": 100,
+                "Cloth": 20
+            }
+        },
+        "Revolver": {
+            "stag": 1,
+            "category": "Weapon",
+            "craft": {
+                "Metal Fragments": 200,
+                "Wood": 100,
                 "Cloth": 50
             }
         },
@@ -310,6 +588,21 @@
                 "Cloth": 25
             }
         },
+        "Thompson": {
+            "stag": 1,
+            "category": "Weapon",
+            "craft": {
+                "Metal Fragments": 350,
+                "Wood": 100
+            }
+        },
+        "Waterpipe Shotgun": {
+            "stag": 1,
+            "category": "Weapon",
+            "craft": {
+                "Metal Fragments": 150
+            }
+        },
         "Wooden Spear": {
             "stag": 1,
             "category": "Weapon",
@@ -317,21 +610,144 @@
                 "Wood": 300
             }
         },
-        "Handmade Shell": {
+        "Apple": {
             "stag": 0,
+            "category": "Food"
+        },
+        "Bear Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Black Raspberries": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Blueberries": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Burned Chicken": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Burned Human Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Burned Wolf Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Can of Beans": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Can of Tuna": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Chocolate Bar": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Cooked Chicken": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Cooked Human Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Cooked Wolf Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Granola Bar": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Raw Chicken Breast": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Raw Human Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Raw Wolf Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Rotten Apple": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Small Water Bottle": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Spoiled Chicken": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Spoiled Human Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "Spoiled Wolf Meat": {
+            "stag": 0,
+            "category": "Food"
+        },
+        "12 Gauge Buckshot": {
+            "stag": 64,
+            "category": "Ammunition",
+            "craft": {
+                "Metal Fragments": 5,
+                "Gun Powder": 10
+            }
+        },
+        "5.56 Rifle Cartridge": {
+            "stag": 64,
+            "category": "Ammunition",
+            "craft": {
+                "Metal Fragments": 10,
+                "Gun Powder": 5
+            }
+        },
+        "Handmade Shell": {
+            "stag": 64,
             "category": "Ammunition",
             "craft": {
                 "Stones": 5,
                 "Gun Powder": 5
             }
         },
+        "Pistol Bullet": {
+            "stag": 64,
+            "category": "Ammunition",
+            "craft": {
+                "Metal Fragments": 10,
+                "Gun Powder": 5
+            }
+        },
         "Wooden Arrow": {
-            "stag": 0,
+            "stag": 32,
             "category": "Ammunition",
             "craft": {
                 "Wood": 50,
                 "Stones": 10
             }
+        },
+        "Snap Trap": {
+            "stag": 1,
+            "category": "Traps",
+            "craft": {
+                "Metal Fragments": 100
+            }
+        },
+        "Door Key": {
+            "stag": 1,
+            "category": "Misc"
         }
     }
 }

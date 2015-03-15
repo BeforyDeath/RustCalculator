@@ -1,10 +1,135 @@
-/* Icon items 75\65\30 px */
+/* Icon items 64\32 px */
 
-.rc_75 {width: 75px;height: 75px;background: url(../images/items_exp_75x75.png)}
-.rc_65 {width: 65px;height: 65px;background: url(../images/items_exp_65x65.png)}
-.rc_30 {width: 30px;height: 30px;background: url(../images/imets_exp_30x30.png)}
+.rc_64 {width: 64px;height: 64px;background: url(../images/items_exp_64.png)}
+.rc_32 {width: 32px;height: 32px;background: url(../images/items_exp_32.png)}
 
-span.rc_75, span.rc_65, span.rc_30 {display: inline-block}
+span.rc_64, span.rc_32 {display: inline-block}
 
-.i9mm_Ammo {background-position: 0 0}
-.iNone {background-position: -900% -900%}
+.Assault_Rifle {background-position: 0 0}
+.Bolt_Action_Rifle {background-position: -100% 0}
+.Bone_Knife {background-position: -200% 0}
+.Eoka_Pistol {background-position: -300% 0}
+.Hunting_Bow {background-position: -400% 0}
+.Pump_Shotgun {background-position: -500% 0}
+.Revolver {background-position: -600% 0}
+.Stone_Spear {background-position: -700% 0}
+.Thompson {background-position: -800% 0}
+.Waterpipe_Shotgun {background-position: -900% 0}
+.Wooden_Spear {background-position: 0 -100%}
+
+.Building_Plan {background-position: -100% -100%}
+.Code_Lock {background-position: -200% -100%}
+.Lock {background-position: -300% -100%}
+.Tool_Cupboard {background-position: -400% -100%}
+
+.Bed {background-position: -500% -100%}
+.Camp_Fire {background-position: -600% -100%}
+.Furnace {background-position: -700% -100%}
+.Lantern {background-position: -800% -100%}
+.Large_Wood_Box {background-position: -900% -100%}
+.Repair_Bench {background-position: 0 -200%}
+.Sleeping_Bag {background-position: -100% -200%}
+.Wood_Storage_Box {background-position: -200% -200%}
+
+.Animal_Fat {background-position: -300% -200%}
+.Battery_Small {background-position: -400% -200%}
+.Battery_Small {background-position: -400% -200%}
+.Charcoal {background-position: -600% -200%}
+.Cloth {background-position: -700% -200%}
+.Empty_Can_Of_Beans {background-position: -800% -200%}
+.Empty_Tuna_Can {background-position: -900% -200%}
+.Explosives {background-position: 0 -300%}
+.Gun_Powder {background-position: -100% -300%}
+.Human_Skull {background-position: -200% -300%}
+.Low_Grade_Fuel {background-position: -300% -300%}
+.Metal_Refined {background-position: -400% -300%}
+.Metal_Fragments {background-position: -500% -300%}
+.Metal_Ore {background-position: -600% -300%}
+.Paper {background-position: -700% -300%}
+.Stones {background-position: -800% -300%}
+.Sulfur {background-position: -900% -300%}
+.Sulfur_Ore {background-position: 0 -400%}
+.Wolf_Skull {background-position: -100% -400%}
+.Wood {background-position: -200% -400%}
+
+.Blue_Longsleeve_T-Shirt {background-position: -300% -400%}
+.Bucket_Helmet {background-position: -400% -400%}
+.Burlap_Shirt {background-position: -500% -400%}
+.Burlap_Shoes {background-position: -600% -400%}
+.Burlap_Trousers {background-position: -700% -400%}
+.Coffee_Can_Helmet {background-position: -800% -400%}
+.Green_T-Shirt {background-position: -900% -400%}
+.Hazmat_Boots {background-position: 0 -500%}
+.Hazmat_Gloves {background-position: -100% -500%}
+.Hazmat_Helmet {background-position: -200% -500%}
+.Hazmat_Jacket {background-position: -300% -500%}
+.Hazmat_Pants {background-position: -400% -500%}
+.Hide_Boots {background-position: -500% -500%}
+.Hide_Pants {background-position: -600% -500%}
+.Hide_Poncho {background-position: -700% -500%}
+.Hide_Vest {background-position: -800% -500%}
+.Leather_Gloves {background-position: -900% -500%}
+.Metal_Chest_Plate {background-position: 0 -600%}
+.Metal_Facemask {background-position: -100% -600%}
+.Red_Jacket {background-position: -200% -600%}
+.Show_Jacket_Black {background-position: -300% -600%}
+.Show_Jacket_Red {background-position: -400% -600%}
+.Show_Jacket_Wood_Camo {background-position: -500% -600%}
+.Urban_Boots {background-position: -600% -600%}
+.Urban_Pants {background-position: -700% -600%}
+.Vagabond_Jacket {background-position: -800% -600%}
+
+.Flare {background-position: -900% -600%}
+.Hammer {background-position: 0 -700%}
+.Hatchet {background-position: -100% -700%}
+.Pick_Axe {background-position: -200% -700%}
+.Rock {background-position: -300% -700%}
+.Salvaged_Axe {background-position: -400% -700%}
+.Salvaged_Hammer {background-position: -500% -700%}
+.Salvaged_Icepick {background-position: -600% -700%}
+.Stone_Hatchet {background-position: -700% -700%}
+.Stone_Pick_Axe {background-position: -800% -700%}
+.Timed_Explosive_Charge {background-position: -900% -700%}
+.Torch {background-position: 0 -800%}
+
+.Anti-Radiation_Pills {background-position: -100% -800%}
+.Bandage {background-position: -200% -800%}
+.Blood {background-position: -300% -800%}
+.Large_Medkit {background-position: -400% -800%}
+.Medical_Syringe {background-position: -500% -800%}
+
+.Apple {background-position: -600% -800%}
+.Bear_Meat {background-position: -700% -800%}
+.Black_Raspberries {background-position: -800% -800%}
+.Blueberries {background-position: -900% -800%}
+.Burned_Chicken {background-position: 0 -900%}
+.Burned_Human_Meat {background-position: -100% -900%}
+.Burned_Wolf_Meat {background-position: -200% -900%}
+
+.Can_of_Beans {background-position: -300% -900%}
+.Can_of_Tuna {background-position: -400% -900%}
+.Chocolate_Bar {background-position: -500% -900%}
+.Cooked_Chicken {background-position: -600% -900%}
+.Cooked_Human_Meat {background-position: -700% -900%}
+.Cooked_Wolf_Meat {background-position: -800% -900%}
+.Granola_Bar {background-position: -900% -900%}
+.Raw_Chicken_Breast {background-position: 0 -1000%}
+.Raw_Human_Meat {background-position: -100% -1000%}
+.Raw_Wolf_Meat {background-position: -200% -1000%}
+.Rotten_Apple {background-position: -300% -1000%}
+.Small_Water_Bottle {background-position: -400% -1000%}
+.Spoiled_Chicken {background-position: -500% -1000%}
+.Spoiled_Human_Meat {background-position: -600% -1000%}
+.Spoiled_Wolf_Meat {background-position: -700% -1000%}
+
+.Gauge_Buckshot {background-position: -800% -1000%}
+.Rifle_Cartridge {background-position: -900% -1000%}
+.Handmade_Shell {background-position: 0 -1100%}
+.Pistol_Bullet {background-position: -100% -1100%}
+.Wooden_Arrow {background-position: -200% -1100%}
+
+.Snap_Trap {background-position: -300% -1100%}
+
+.Door_Key {background-position: -400% -1100%}
+
+.None {background-position: -500% -1100%}

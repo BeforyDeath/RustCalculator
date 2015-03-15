@@ -1,0 +1,10 @@
+/* Icon items 75\65\30 px */
+
+.rc_75 {width: 75px;height: 75px;background: url(../images/items_exp_75x75.png)}
+.rc_65 {width: 65px;height: 65px;background: url(../images/items_exp_65x65.png)}
+.rc_30 {width: 30px;height: 30px;background: url(../images/imets_exp_30x30.png)}
+
+span.rc_75, span.rc_65, span.rc_30 {display: inline-block}
+
+.i9mm_Ammo {background-position: 0 0}
+.iNone {background-position: -900% -900%}

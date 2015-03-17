@@ -2,3 +2,6 @@
 .idea
 
 vendor
+
+# compiled ts
+new/js

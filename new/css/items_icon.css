@@ -1,8 +1,8 @@
 /*Rust Legacy icon Icon size 75\65\30 px*/
 
-.ei_75 {width: 75px;height: 75px;background: url(../images/rust_75x75.png)}
-.ei_65 {width: 65px;height: 65px;background: url(../images/rust_65x65.png)}
-.ei_30 {width: 30px;height: 30px;background: url(../images/rust_30x30.png)}
+.ei_75 {width: 75px;height: 75px;background: url(../img/items_75x75.png)}
+.ei_65 {width: 65px;height: 65px;background: url(../img/items_65x65.png)}
+.ei_30 {width: 30px;height: 30px;background: url(../img/imets_30x30.png)}
 
 .is_75 {width: 75px;height: 75px;display: block)}
 .is_65 {width: 65px;height: 65px;display: block)}

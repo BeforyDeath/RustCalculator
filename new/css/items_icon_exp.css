@@ -1,7 +1,7 @@
 /* Icon items 64\32 px */
 
-.rc_64 {width: 64px;height: 64px;background: url(../images/items_exp_64.png)}
-.rc_32 {width: 32px;height: 32px;background: url(../images/items_exp_32.png)}
+.rc_64 {width: 64px;height: 64px;background: url(../../images/items_exp_64.png)}
+.rc_32 {width: 32px;height: 32px;background: url(../../images/items_exp_32.png)}
 
 span.rc_64, span.rc_32 {display: inline-block}
 

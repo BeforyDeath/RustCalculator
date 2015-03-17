@@ -22,7 +22,6 @@ var EventMixin = (function () {
         };
         this.trigger = function (eventName) {
             if (!_this._eventHandlers[eventName]) {
-                //console.info('eventHandlers no "' + eventName + '" event');
                 return;
             }
             var handlers = _this._eventHandlers[eventName];
@@ -33,4 +32,3 @@ var EventMixin = (function () {
     }
     return EventMixin;
 })();
-//# sourceMappingURL=EventMixin.js.map

@@ -1,5 +1,3 @@
-/// <reference path="../vendor/DefinitelyTyped/jquery/jquery.d.ts"/>
-/// <reference path="EventMixin.ts"/>
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -30,4 +28,3 @@ var Rust = (function (_super) {
     };
     return Rust;
 })(EventMixin);
-//# sourceMappingURL=Rust.js.map

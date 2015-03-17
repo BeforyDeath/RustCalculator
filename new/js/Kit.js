@@ -4,7 +4,6 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-/// <reference path="Rust.ts"/>
 var Kit = (function (_super) {
     __extends(Kit, _super);
     function Kit() {
@@ -12,4 +11,3 @@ var Kit = (function (_super) {
     }
     return Kit;
 })(Rust);
-//# sourceMappingURL=Kit.js.map

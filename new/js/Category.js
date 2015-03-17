@@ -4,7 +4,6 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-/// <reference path="Rust.ts"/>
 var Category = (function (_super) {
     __extends(Category, _super);
     function Category() {
@@ -47,4 +46,3 @@ var Category = (function (_super) {
     };
     return Category;
 })(Rust);
-//# sourceMappingURL=Category.js.map

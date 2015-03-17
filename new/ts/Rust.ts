@@ -1,4 +1,4 @@
-/// <reference path="../vendor/DefinitelyTyped/jquery/jquery.d.ts"/>
+/// <reference path="../../vendor/DefinitelyTyped/jquery/jquery.d.ts"/>
 /// <reference path="EventMixin.ts"/>
 
 class Rust extends EventMixin {
@@ -20,7 +20,7 @@ class Rust extends EventMixin {
 
     loadData(json) {
     }
-    
+
     draw(selector:string) {
     }
 }

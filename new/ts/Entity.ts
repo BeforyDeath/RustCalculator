@@ -1,7 +1,7 @@
 /// <reference path="Rust.ts"/>
 class Entity extends Rust {
-
     loadData(json) {
+
         var _data = {};
         $.each(json.entity, function (key, value) {
             _data[key.replace(/ /g, '_')] = {

@@ -1,7 +1,7 @@
 /* Icon items 64\32 px */
 
-.rc_64 {width: 64px;height: 64px;background: url(../../images/items_exp_64.png)}
-.rc_32 {width: 32px;height: 32px;background: url(../../images/items_exp_32.png)}
+.rc_64 {width: 64px;height: 64px;background: url(../img/items_exp_64.png)}
+.rc_32 {width: 32px;height: 32px;background: url(../img/items_exp_32.png)}
 
 .rc_64, .rc_32 {
     display: inline-block;
@@ -11,6 +11,9 @@
 }
 button.rc_64, button.rc_32 {
     margin: 1px;
+}
+.rc_64:hover{
+    filter: brightness(98%) saturate(200%);
 }
 
 .Assault_Rifle {background-position: 0 0}
@@ -41,7 +44,7 @@ button.rc_64, button.rc_32 {
 
 .Animal_Fat {background-position: -300% -200%}
 .Battery_Small {background-position: -400% -200%}
-.Bone_Fragments {background-position: -500% -200%}
+.Battery_Small {background-position: -400% -200%}
 .Charcoal {background-position: -600% -200%}
 .Cloth {background-position: -700% -200%}
 .Empty_Can_Of_Beans {background-position: -800% -200%}

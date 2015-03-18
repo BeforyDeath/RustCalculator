@@ -1,6 +1,6 @@
 /// <reference path="Rust.ts"/>
 class Inventory extends Rust {
-    public slot:number = 36;
+    public slot:number = 40;
 
     draw(selector:string) {
         this.selector = selector;
@@ -9,7 +9,7 @@ class Inventory extends Rust {
             var entity = $('<button/>', {
                 id: 'slot' + i,
                 val: i,
-                class: 'is_' + this.size
+                class: 'rc_' + this.size + ' None'
             });
             $(entity).on('click', this.onClick);
             $(selector).append(entity);

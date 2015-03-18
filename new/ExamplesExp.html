@@ -3,7 +3,7 @@
 <head>
     <script src="../vendor/jquery-2.1.3.js"></script>
 
-    <link rel="stylesheet" href="css/items_icon.css"/>
+    <link rel="stylesheet" href="css/items_icon_exp.css"/>
 
     <script src="js/EventMixin.js"></script>
     <script src="js/Rust.js"></script>
@@ -14,27 +14,26 @@
 
 </head>
 <body>
+
 <div style="width: 700px;margin: 0 auto">
     <div id="category"></div>
     <div id="entity"></div>
     <p>inventory</p>
     <div id="inventory"></div>
 </div>
-
 <script>
     var category = new Category();
-    category.load('data/RustData.json');
+    category.load('data/RustDataExp.json');
     category.draw('#category');
 
     var entity = new Entity();
-    entity.load('data/RustData.json');
-    entity.size = 65;
+    entity.load('data/RustDataExp.json');
+    entity.size = 64;
     entity.draw('#entity');
     category.on('change', entity.categoryChange);
     category.select('Weapon');
 
     var inventory = new Inventory();
-    inventory.size = 65;
     inventory.draw('#inventory');
 </script>
 

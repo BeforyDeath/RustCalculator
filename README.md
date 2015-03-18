@@ -1,8 +1,12 @@
-RustCalculator
-==============
+Rust Calculator resource
+========================
 
-RUST calculator resource
+Old version: [Rust Calculator](http://dev.beforydeath.ru/RustCalculator/Examples.html)
+`Created by the project [iqrust.ru](http://www.iqrust.ru/calculator_resources/)`
 
-Demo of the first version: [RustCalculator](http://dev.beforydeath.ru/RustCalculator/Examples.html)
+Work on the new component version
+=================================
 
-Created by the project [iqrust.ru](http://www.iqrust.ru/calculator_resources/)
+Examples: 
+  [Rust Legacy](http://dev.beforydeath.ru/RustCalculator/new/Examples.html)
+  [Rust Experimental](http://dev.beforydeath.ru/RustCalculator/new/ExamplesExp.html)

@@ -4,7 +4,7 @@
 class Rust extends EventMixin {
     data = {};
     selector:string;
-    size:number = 65;
+    size:number = 64;
 
     load(url:string) {
         var self = this;
@@ -22,5 +22,6 @@ class Rust extends EventMixin {
     }
 
     draw(selector:string) {
+
     }
 }

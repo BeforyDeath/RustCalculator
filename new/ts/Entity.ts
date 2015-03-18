@@ -4,7 +4,11 @@ class Entity extends Rust {
 
         var _data = {};
         $.each(json.entity, function (key, value) {
-            _data[key.replace(/ /g, '_')] = {
+            var newKey = key.replace(/ -/g, '')
+                .replace(/(^[\d.]+( ))/g, '')
+                .replace(/(^[\d.]+(mm))/g, 'mm')
+                .replace(/ /g, '_');
+            _data[newKey] = {
                 name: key,
                 category_id: value.category_id,
                 stag: value.stag
@@ -19,7 +23,7 @@ class Entity extends Rust {
         $.each(this.data, function (key, value) {
             var entity = $('<button/>', {
                 id: key,
-                class: 'ei_' + self.size + ' i' + key,
+                class: 'rc_' + self.size + ' ' + key,
                 title: value.name,
                 val: value.category_id
             });

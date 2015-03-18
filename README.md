@@ -2,6 +2,7 @@ Rust Calculator resource
 ========================
 
 Old version: [Rust Calculator](http://dev.beforydeath.ru/RustCalculator/Examples.html)
+
 Created by the project [iqrust.ru](http://www.iqrust.ru/calculator_resources/)
 
 Work on the new component version

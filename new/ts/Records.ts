@@ -18,7 +18,6 @@ class Records {
                 self.loadData(data);
             }
         });
-        // console.dir(this._data);
     };
 
     private loadData = (json) => {
@@ -38,7 +37,7 @@ class Records {
         this._data = _data;
     };
 
-    createKey = (name) => {
+    private createKey = (name) => {
         return name.replace(/ -/g, '').replace(/(^[\d.]+)/g, '').trim().replace(/ /g, '_');
     }
 }

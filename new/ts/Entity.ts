@@ -1,13 +1,18 @@
 /// <reference path="Rust.ts"/>
+/// <reference path="Records.ts"/>
 class Entity extends Rust {
     loadData(json) {
-
         var _data = {};
+        var records = new Records();
         $.each(json.entity, function (key, value) {
-            var newKey = key.replace(/ -/g, '')
-                .replace(/(^[\d.]+( ))/g, '')
-                .replace(/(^[\d.]+(mm))/g, 'mm')
-                .replace(/ /g, '_');
+
+            //var newKey = key.replace(/ -/g, '')
+            //    .replace(/(^[\d.]+( ))/g, '')
+            //    .replace(/(^[\d.]+(mm))/g, 'mm')
+            //    .replace(/ /g, '_');
+
+            var newKey = records.createKey(key);
+
             _data[newKey] = {
                 name: key,
                 category_id: value.category_id,

@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="css/items_icon.css"/>
 
+    <script src="js/Records.js"></script>
     <script src="js/EventMixin.js"></script>
     <script src="js/Rust.js"></script>
     <script src="js/Category.js"></script>
@@ -22,6 +23,10 @@
 </div>
 
 <script>
+    var record = new Records();
+    record.load('data/RustData.json');
+    console.log(record.getData('entity'));
+
     var category = new Category();
     category.load('data/RustData.json');
     category.draw('#category');

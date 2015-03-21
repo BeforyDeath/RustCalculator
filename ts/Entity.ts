@@ -2,7 +2,7 @@
 ///<reference path="Records.ts"/>
 
 class Entity extends EventMixin {
-    selector:string = '';
+    selector:string;
     size:number;
     records:Records;
 

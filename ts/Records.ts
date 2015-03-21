@@ -37,7 +37,7 @@ class Records {
         this._data = _data;
     };
 
-    private createKey = (name) => {
+    createKey = (name) => {
         return name.replace(/ -/g, '').replace(/(^[\d.]+)/g, '').trim().replace(/ /g, '_');
     }
 }

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="../vendor/jquery-2.1.3.js"></script>
+    <script src="vendor/jquery-2.1.3.js"></script>
 
     <link rel="stylesheet" href="css/items_icon.css"/>
 
-    <script src="js/Records.js"></script>
     <script src="js/EventMixin.js"></script>
-    <script src="js/Rust.js"></script>
+    <script src="js/Records.js"></script>
     <script src="js/Category.js"></script>
     <script src="js/Entity.js"></script>
-    <script src="js/Inventory.js"></script>
-    <script src="js/Kit.js"></script>
 
 </head>
 <body>
@@ -19,28 +16,38 @@
     <div id="category"></div>
     <div id="entity"></div>
     <p>inventory</p>
+
     <div id="inventory"></div>
 </div>
 
 <script>
     var record = new Records();
     record.load('data/RustData.json');
-    console.log(record.getData('entity'));
 
-    var category = new Category();
-    category.load('data/RustData.json');
+    var category = new Category(record);
     category.draw('#category');
 
-    var entity = new Entity();
-    entity.load('data/RustData.json');
-    entity.size = 65;
+    var entity = new Entity(record, 65);
     entity.draw('#entity');
+
     category.on('change', entity.categoryChange);
     category.select('Weapon');
 
-    var inventory = new Inventory();
-    inventory.size = 65;
-    inventory.draw('#inventory');
+    /*
+     var category = new Category();
+     category.load('data/RustData.json');
+     category.draw('#category');
+
+     var entity = new Entity();
+     entity.load('data/RustData.json');
+     entity.size = 65;
+     entity.draw('#entity');
+     category.on('change', entity.categoryChange);
+
+     var inventory = new Inventory();
+     inventory.size = 65;
+     inventory.draw('#inventory');
+     */
 </script>
 
 </body>

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="../vendor/jquery-2.1.3.js"></script>
+    <script src="vendor/jquery-2.1.3.js"></script>
 
     <link rel="stylesheet" href="css/items_icon_exp.css"/>
 
     <script src="js/Records.js"></script>
     <script src="js/EventMixin.js"></script>
-    <script src="js/Rust.js"></script>
     <script src="js/Category.js"></script>
     <script src="js/Entity.js"></script>
-    <script src="js/Inventory.js"></script>
-    <script src="js/Kit.js"></script>
 
 </head>
 <body>
@@ -23,6 +20,19 @@
     <div id="inventory"></div>
 </div>
 <script>
+    var record = new Records();
+    record.load('data/RustDataExp.json');
+
+    var category = new Category(record);
+    category.draw('#category');
+
+    var entity = new Entity(record);
+    entity.draw('#entity');
+
+    category.on('change', entity.categoryChange);
+    category.select('Weapon');
+
+    /*
     var category = new Category();
     category.load('data/RustDataExp.json');
     category.draw('#category');
@@ -36,6 +46,7 @@
 
     var inventory = new Inventory();
     inventory.draw('#inventory');
+    */
 </script>
 
 </body>

@@ -1,41 +1,30 @@
-/// <reference path="Rust.ts"/>
-/// <reference path="Records.ts"/>
-class Entity extends Rust {
-    loadData(json) {
-        var _data = {};
-        var records = new Records();
-        $.each(json.entity, function (key, value) {
+///<reference path="EventMixin.ts"/>
+///<reference path="Records.ts"/>
 
-            //var newKey = key.replace(/ -/g, '')
-            //    .replace(/(^[\d.]+( ))/g, '')
-            //    .replace(/(^[\d.]+(mm))/g, 'mm')
-            //    .replace(/ /g, '_');
+class Entity extends EventMixin {
+    selector:string = '';
+    size:number;
+    records:Records;
 
-            var newKey = records.createKey(key);
-
-            _data[newKey] = {
-                name: key,
-                category_id: value.category_id,
-                stag: value.stag
-            };
-        });
-        this.data = _data;
+    constructor(records:Records, size:number = 64) {
+        super();
+        this.size = size;
+        this.records = records.getData('entity');
     }
 
-    draw(selector:string) {
+    draw = (selector:string) => {
+        this.selector = selector;
         var self = this;
-        self.selector = selector;
-        $.each(this.data, function (key, value) {
+        $.each(this.records, function (key, value) {
             var entity = $('<button/>', {
                 id: key,
-                class: 'rc_' + self.size + ' ' + key,
                 title: value.name,
                 val: value.category_id
-            });
+            }).addClass('rc_' + self.size + ' ' + key);
             $(entity).on('click', self.onClick);
             $(selector).append(entity);
         });
-    }
+    };
 
     categoryChange = (e) => {
         if (e.category_id > 0) {
@@ -48,8 +37,9 @@ class Entity extends Rust {
         var id = e.currentTarget.id,
             category_id = e.currentTarget.value,
             name = e.currentTarget.title,
-            stag = this.data[id].stag,
+            stag = this.records[id].stag,
             count = 1;
+        console.log('click', {id: id, category_id: category_id, name: name, stag: stag, count: count});
         this.trigger('click', {id: id, category_id: category_id, name: name, stag: stag, count: count});
-    }
+    };
 }

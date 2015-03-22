@@ -9,6 +9,8 @@
     <script src="js/Records.js"></script>
     <script src="js/Category.js"></script>
     <script src="js/Entity.js"></script>
+    <script src="js/Kits.js"></script>
+    <script src="js/Inventory.js"></script>
 
 </head>
 <body>
@@ -33,6 +35,8 @@
     category.on('change', entity.categoryChange);
     category.select('Weapon');
 
+    var kits = new Kits(record);
+    var inventory = new Inventory(kits);
     /*
      var category = new Category();
      category.load('data/RustData.json');

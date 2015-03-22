@@ -3,8 +3,12 @@
 class Records {
     private _data = {};
 
-    getData = (name) => {
+    getData = (name:string) => {
         return this._data[name];
+    };
+
+    setData = (name:string, data) => {
+        this._data[name] = data;
     };
 
     load = (url:string) => {

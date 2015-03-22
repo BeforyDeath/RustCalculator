@@ -4,7 +4,7 @@
 
 class Inventory extends EventMixin {
     selector:string;
-    slot:number = 40;
+    slot:number = 20;
     size:number = 64;
     kits:Kits;
 
@@ -13,10 +13,9 @@ class Inventory extends EventMixin {
         this.kits = kits;
     }
 
-    draw(selector:string) {
+    draw = (selector:string) => {
         this.selector = selector;
         for (var i = 0; i < this.slot; i++) {
-            //this.data[i] = {id: '', count: 0};
             var entity = $('<button/>', {
                 id: 'slot' + i,
                 val: i
@@ -24,7 +23,11 @@ class Inventory extends EventMixin {
             $(entity).on('click', this.onClick);
             $(selector).append(entity);
         }
-    }
+    };
+
+    drawKit = ()=> {
+        
+    };
 
     onClick = (e) => {
         console.log(e.currentTarget.id);

@@ -3,12 +3,10 @@
 
 class Kits {
     selector:string;
-    size:number;
     records:Records;
 
-    constructor(records:Records, size:number = 64) {
+    constructor(records:Records) {
         //super();
-        this.size = size;
         this.records = records.getData('kits');
     }
 

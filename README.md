@@ -6,7 +6,7 @@ Old version: [Rust Calculator](http://dev.beforydeath.ru/RustCalculator/Examples
 Created by the project [iqrust.ru](http://www.iqrust.ru/calculator_resources/)
 
 Work on the new component version
-=================================
+---------------------------------
 
 Examples: 
   [Rust Legacy](http://dev.beforydeath.ru/RustCalculator/new/Examples.html)

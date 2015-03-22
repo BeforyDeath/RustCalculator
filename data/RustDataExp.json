@@ -763,5 +763,9 @@
             "stag": 1,
             "category_id": 11
         }
+    },
+    "kits": {
+        "Wooden Arrow": 200,
+        "Metal Fragments": 100
     }
 }
